@@ -25,6 +25,7 @@ Next.js 16 site plus a TypeScript ETL for the "Open List" (ru.openlist.wiki) vic
 
 ## Rules
 
+- `master` is protected by a ruleset: no direct pushes for anyone, including admins. Work on a branch, open a pull request, and squash-merge it once the `check` job (`ci.yml`) is green. Release tags `v*` cannot be moved or deleted. Deploy secrets live in the `production` environment, which only `master` and `v*` tags may use.
 - All code, comments, identifiers and commit messages are in English. Russian appears only in data: every UI string lives in `src/lib/ui-text.ts`, plus template parameter names, dictionary raw values, fixtures. The one document exception is `README.ru.md`, the maintainer-requested translation of `README.md`: change both together.
 - Bulk database writes go through `COPY` (`scripts/etl/db/copy.ts`), never row-by-row inserts.
 - The `staging` schema is recreated from `scripts/etl/db/staging.sql` on every import. Do not add migrations for it.
