@@ -1,0 +1,19 @@
+# Security updates are on for every ecosystem (repository settings); these are the routine version bumps.
+# Grouped and monthly, so they arrive as one pull request per ecosystem rather than a stream.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 5
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]

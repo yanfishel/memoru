@@ -54,13 +54,14 @@ jobs:
     # A release deploys only after a successful build; a manual run has no build and deploys directly.
     if: ${{ !cancelled() && (needs.build.result == 'success' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-latest
+    # The deploy secrets and DEPLOY_USER live in this environment, which only master and v* tags may use.
+    environment: production
     steps:
       - name: Deploy the tag over SSH
         env:
           TAG: ${{ github.event.release.tag_name || inputs.tag }}
           DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
-          # A variable, not a secret: the user name is not sensitive, and as a secret it masked every
-          # "memoru" in the logs, image names included.
+          # A variable, not a secret: as a secret it masked every "memoru" in the logs, image names included.
           DEPLOY_USER: ${{ vars.DEPLOY_USER }}
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
           DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
