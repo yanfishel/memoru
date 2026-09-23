@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.63.0",
-    "@types/node": "^20",
+    "@types/node": "^26",
     "@types/pg": "^8.23.1",
     "@types/pg-copy-streams": "^1.2.5",
     "@types/react": "^19",
