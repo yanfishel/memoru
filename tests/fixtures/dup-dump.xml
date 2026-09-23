@@ -1,0 +1,50 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" version="0.10" xml:lang="ru">
+  <siteinfo>
+    <sitename>Открытый список</sitename>
+  </siteinfo>
+  <page>
+    <title>Дубов Пётр Петрович (1900)</title>
+    <ns>0</ns>
+    <id>201</id>
+    <revision>
+      <id>2002</id>
+      <timestamp>2022-06-06T00:00:00Z</timestamp>
+      <text bytes="200" xml:space="preserve">{{Шаблон:Формуляр
+|пол=мужчина
+|приговор 1=20 лет ИТЛ
+}}
+
+[[Категория:Открытый список]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Сверкот Павел Валентинович (1903)</title>
+    <ns>0</ns>
+    <id>202</id>
+    <revision>
+      <id>1004</id>
+      <timestamp>2020-02-02T00:00:00Z</timestamp>
+      <text bytes="200" xml:space="preserve">{{Шаблон:Формуляр
+|пол=мужчина
+|приговор 1=ВМН (расстрел)
+}}
+
+[[Категория:Все мартирологи]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Дубов Пётр Петрович (1900)</title>
+    <ns>0</ns>
+    <id>201</id>
+    <revision>
+      <id>1002</id>
+      <timestamp>2019-01-01T00:00:00Z</timestamp>
+      <text bytes="200" xml:space="preserve">{{Шаблон:Формуляр
+|пол=женщина
+|приговор 1=10 лет ИТЛ
+}}
+
+[[Категория:Открытый список]]</text>
+    </revision>
+  </page>
+</mediawiki>

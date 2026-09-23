@@ -1,0 +1,458 @@
+field,code,label_ru,sort_order
+sex,m,мужчины,1
+sex,f,женщины,2
+sex,unknown,не указано,90
+sex,unrecognized,не распознано,91
+nationality,russian,русские,1
+nationality,german,немцы,2
+nationality,ukrainian,украинцы,3
+nationality,polish,поляки,4
+nationality,belarusian,белорусы,5
+nationality,jewish,евреи,6
+nationality,kazakh,казахи,7
+nationality,tatar,татары,8
+nationality,balkar,балкарцы,9
+nationality,greek,греки,10
+nationality,latvian,латыши,11
+nationality,chinese,китайцы,12
+nationality,estonian,эстонцы,13
+nationality,chuvash,чуваши,14
+nationality,bashkir,башкиры,15
+nationality,finnish,финны,16
+nationality,korean,корейцы,17
+nationality,buryat,буряты,18
+nationality,lithuanian,литовцы,19
+nationality,mordvin,мордва,20
+nationality,armenian,армяне,21
+nationality,mari,марийцы,22
+nationality,karelian,карелы,23
+nationality,kalmyk,калмыки,24
+nationality,chechen,чеченцы,25
+nationality,kabardian,кабардинцы,26
+nationality,georgian,грузины,27
+nationality,ossetian,осетины,28
+nationality,udmurt,удмурты,29
+nationality,komi,коми,30
+nationality,komi_permyak,коми-пермяки,31
+nationality,bulgarian,болгары,32
+nationality,moldovan,молдаване,33
+nationality,altai,алтайцы,34
+nationality,uzbek,узбеки,35
+nationality,yakut,якуты,36
+nationality,khakas,хакасы,37
+nationality,azerbaijani,азербайджанцы,38
+nationality,hungarian,венгры,39
+nationality,japanese,японцы,40
+nationality,czech,чехи,41
+nationality,ingush,ингуши,42
+nationality,austrian,австрийцы,43
+nationality,romanian,румыны,44
+nationality,uyghur,уйгуры,45
+nationality,avar,аварцы,46
+nationality,crimean_tatar,крымские татары,47
+nationality,assyrian,ассирийцы,48
+nationality,evenk,эвенки,49
+nationality,italian,итальянцы,50
+nationality,lezgin,лезгины,51
+nationality,kumyk,кумыки,52
+nationality,persian,персы,53
+nationality,kryashen,кряшены,54
+nationality,turkmen,туркмены,55
+nationality,cossack,казаки,56
+nationality,latgalian,латгальцы,57
+nationality,roma,цыгане,58
+nationality,izhorian,ижорцы,59
+nationality,dargin,даргинцы,60
+nationality,circassian,черкесы,61
+nationality,karachay,карачаевцы,62
+nationality,turkish,турки,63
+nationality,kyrgyz,киргизы,64
+nationality,dungan,дунгане,65
+nationality,serbian,сербы,66
+nationality,nagaibak,нагайбаки,67
+nationality,tajik,таджики,68
+nationality,telengit,теленгиты,69
+nationality,nivkh,нивхи,70
+nationality,lak,лакцы,71
+nationality,kurdish,курды,72
+nationality,veps,вепсы,73
+nationality,swedish,шведы,74
+nationality,mongol,монголы,75
+nationality,abkhaz,абхазы,76
+nationality,koryak,коряки,77
+nationality,nogai,ногайцы,78
+nationality,oroch,орочи,79
+nationality,ulch,ульчи,80
+nationality,croatian,хорваты,81
+nationality,nanai,нанайцы,82
+nationality,kamchadal,камчадалы,83
+nationality,adjarian,аджарцы,84
+nationality,karaim,караимы,85
+nationality,adyghe,адыгейцы,86
+nationality,sami,саамы,87
+nationality,nenets,ненцы,88
+nationality,abazin,абазины,89
+nationality,norwegian,норвежцы,90
+nationality,french,французы,91
+nationality,slovak,словаки,92
+nationality,swiss,швейцарцы,93
+nationality,english,англичане,94
+nationality,nganasan,нганасаны,95
+nationality,tuvan,тувинцы,96
+nationality,tabasaran,табасаранцы,97
+nationality,gagauz,гагаузы,98
+nationality,selkup,селькупы,99
+nationality,dutch,голландцы,100
+nationality,spanish,испанцы,101
+nationality,krymchak,крымчаки,102
+nationality,khanty,ханты,103
+nationality,dolgan,долганы,104
+nationality,indian,индийцы,105
+nationality,karakalpak,каракалпаки,106
+nationality,erzya,эрзя,107
+nationality,danish,датчане,108
+nationality,yugoslav,югославы,109
+nationality,shor,шорцы,110
+nationality,afghan,афганцы,111
+nationality,unknown,не указано,900
+nationality,unrecognized,не распознано,901
+education,literate,грамотные,1
+education,illiterate,неграмотные,2
+education,primary,начальное,3
+education,incomplete_secondary,неполное среднее,4
+education,secondary,среднее,5
+education,higher,высшее,6
+education,semi_literate,малограмотные,7
+education,incomplete_primary,неполное начальное,8
+education,none,без образования,9
+education,incomplete_higher,незаконченное высшее,10
+education,secondary_special,среднее специальное,11
+education,religious,религиозное,12
+education,unknown,не указано,90
+education,unrecognized,не распознано,91
+party,non_party,беспартийные,1
+party,vkpb,члены ВКП(б),2
+party,vlksm,члены ВЛКСМ,3
+party,ex_vkpb,бывшие члены ВКП(б),4
+party,vkpb_candidate,кандидаты в члены ВКП(б),5
+party,sr,эсеры,6
+party,ex_vlksm,бывшие члены ВЛКСМ,7
+party,anarchist,анархисты,8
+party,social_democrat,социал-демократы,9
+party,trotskyist,троцкисты,10
+party,baptist,баптисты,11
+party,kpzb,члены Компартии Западной Белоруссии,12
+party,menshevik,меньшевики,13
+party,sed,члены СЕПГ,14
+party,catholic,католики,15
+party,kpd,члены Компартии Германии,16
+party,ldpg,члены ЛДПГ,17
+party,mnrp,члены МНРП,18
+party,old_believer,старообрядцы,19
+party,kpp,члены Компартии Польши,20
+party,musavat,члены партии «Мусават»,21
+party,jehovahs_witness,иеговисты,22
+party,tkp,члены Трудовой крестьянской партии,23
+party,ndpg,члены НДПГ,24
+party,unknown,не указано,90
+party,unrecognized,не распознано,91
+sentence_type,vmn,расстрел,1
+sentence_type,itl,лагерь,2
+sentence_type,vys,"ссылка, спецпоселение",3
+sentence_type,zak,тюрьма,4
+sentence_type,pr,принудительные работы,5
+sentence_type,other,другое,6
+sentence_type,unknown,не указано,90
+sentence_type,unrecognized,не распознано,91
+death_kind,executed,расстреляны,1
+death_kind,died,умерли,2
+death_kind,unknown,не указано,90
+death_kind,unrecognized,не распознано,91
+age_bucket,<18,до 18,1
+age_bucket,18-24,18–24,2
+age_bucket,25-34,25–34,3
+age_bucket,35-44,35–44,4
+age_bucket,45-54,45–54,5
+age_bucket,55-64,55–64,6
+age_bucket,65+,65 и старше,7
+age_bucket,unknown,не указано,90
+rehabilitated,true,реабилитированы,1
+rehabilitated,false,сведений нет,2
+birth_country,AT,Австрия,10
+birth_country,AZ,Азербайджан,10
+birth_country,BY,Беларусь,10
+birth_country,HU,Венгрия,10
+birth_country,DE,Германия,10
+birth_country,GE,Грузия,10
+birth_country,IR,Иран,10
+birth_country,KZ,Казахстан,10
+birth_country,CN,Китай,10
+birth_country,KG,Кыргызстан,10
+birth_country,LV,Латвия,10
+birth_country,LT,Литва,10
+birth_country,MD,Молдова,10
+birth_country,PL,Польша,10
+birth_country,RU,Россия,10
+birth_country,RO,Румыния,10
+birth_country,SU,СССР (без уточнения),10
+birth_country,TR,Турция,10
+birth_country,UZ,Узбекистан,10
+birth_country,UA,Украина,10
+birth_country,FI,Финляндия,10
+birth_country,EE,Эстония,10
+birth_country,JP,Япония,10
+birth_country,unknown,не указано,90
+birth_country,unrecognized,не распознано,91
+birth_region,AZ,Азербайджан,10
+birth_region,RU-ALT,Алтайский край,10
+birth_region,RU-AMU,Амурская область,10
+birth_region,RU-ARK,Архангельская область,10
+birth_region,RU-AST,Астраханская область,10
+birth_region,BY,Беларусь,10
+birth_region,RU-BRY,Брянская область,10
+birth_region,RU-VLA,Владимирская область,10
+birth_region,RU-VGG,Волгоградская область,10
+birth_region,RU-VLG,Вологодская область,10
+birth_region,RU-VOR,Воронежская область,10
+birth_region,GE,Грузия,10
+birth_region,RU-YEV,Еврейская автономная область,10
+birth_region,RU-ZAB,Забайкальский край,10
+birth_region,RU-IVA,Ивановская область,10
+birth_region,RU-IRK,Иркутская область,10
+birth_region,RU-KB,Кабардино-Балкарская Республика,10
+birth_region,KZ,Казахстан,10
+birth_region,RU-KLU,Калужская область,10
+birth_region,KG,Кыргызстан,10
+birth_region,RU-KIR,Кировская область,10
+birth_region,RU-KOS,Костромская область,10
+birth_region,RU-KDA,Краснодарский край,10
+birth_region,RU-KYA,Красноярский край,10
+birth_region,UA-43,Крым,10
+birth_region,RU-KGN,Курганская область,10
+birth_region,RU-KRS,Курская область,10
+birth_region,LV,Латвия,10
+birth_region,RU-LEN,Ленинградская область,10
+birth_region,RU-LIP,Липецкая область,10
+birth_region,LT,Литва,10
+birth_region,MD,Молдова,10
+birth_region,RU-MOW,Москва,10
+birth_region,RU-MOS,Московская область,10
+birth_region,RU-NIZ,Нижегородская область,10
+birth_region,RU-NGR,Новгородская область,10
+birth_region,RU-NVS,Новосибирская область,10
+birth_region,RU-OMS,Омская область,10
+birth_region,RU-ORE,Оренбургская область,10
+birth_region,RU-ORL,Орловская область,10
+birth_region,RU-PNZ,Пензенская область,10
+birth_region,RU-PER,Пермский край,10
+birth_region,RU-PRI,Приморский край,10
+birth_region,RU-PSK,Псковская область,10
+birth_region,RU-BA,Республика Башкортостан,10
+birth_region,RU-BU,Республика Бурятия,10
+birth_region,RU-DA,Республика Дагестан,10
+birth_region,RU-KL,Республика Калмыкия,10
+birth_region,RU-KR,Республика Карелия,10
+birth_region,RU-KO,Республика Коми,10
+birth_region,RU-ME,Республика Марий Эл,10
+birth_region,RU-MO,Республика Мордовия,10
+birth_region,RU-SA,Республика Саха (Якутия),10
+birth_region,RU-TA,Республика Татарстан,10
+birth_region,RU-KK,Республика Хакасия,10
+birth_region,RU-ROS,Ростовская область,10
+birth_region,RU-RYA,Рязанская область,10
+birth_region,RU-SAM,Самарская область,10
+birth_region,RU-SPE,Санкт-Петербург,10
+birth_region,RU-SAR,Саратовская область,10
+birth_region,RU-SVE,Свердловская область,10
+birth_region,UA-40,Севастополь,10
+birth_region,RU-SMO,Смоленская область,10
+birth_region,RU-STA,Ставропольский край,10
+birth_region,RU-TAM,Тамбовская область,10
+birth_region,RU-TVE,Тверская область,10
+birth_region,RU-TOM,Томская область,10
+birth_region,RU-TUL,Тульская область,10
+birth_region,RU-TYU,Тюменская область,10
+birth_region,RU-UD,Удмуртская Республика,10
+birth_region,UZ,Узбекистан,10
+birth_region,UA,Украина,10
+birth_region,RU-ULY,Ульяновская область,10
+birth_region,RU-CHE,Челябинская область,10
+birth_region,RU-CU,Чувашская Республика,10
+birth_region,RU-CHU,Чукотский автономный округ,10
+birth_region,EE,Эстония,10
+birth_region,RU-YAR,Ярославская область,10
+birth_region,unknown,не указано,90
+birth_region,unrecognized,не распознано,91
+residence_region,AZ,Азербайджан,10
+residence_region,RU-ALT,Алтайский край,10
+residence_region,RU-AMU,Амурская область,10
+residence_region,RU-ARK,Архангельская область,10
+residence_region,RU-AST,Астраханская область,10
+residence_region,BY,Беларусь,10
+residence_region,RU-BRY,Брянская область,10
+residence_region,RU-VLA,Владимирская область,10
+residence_region,RU-VGG,Волгоградская область,10
+residence_region,RU-VLG,Вологодская область,10
+residence_region,RU-VOR,Воронежская область,10
+residence_region,GE,Грузия,10
+residence_region,RU-YEV,Еврейская автономная область,10
+residence_region,RU-ZAB,Забайкальский край,10
+residence_region,RU-IVA,Ивановская область,10
+residence_region,RU-IRK,Иркутская область,10
+residence_region,RU-KB,Кабардино-Балкарская Республика,10
+residence_region,KZ,Казахстан,10
+residence_region,RU-KLU,Калужская область,10
+residence_region,RU-KAM,Камчатский край,10
+residence_region,RU-KC,Карачаево-Черкесская Республика,10
+residence_region,RU-KEM,Кемеровская область,10
+residence_region,RU-KIR,Кировская область,10
+residence_region,RU-KOS,Костромская область,10
+residence_region,RU-KDA,Краснодарский край,10
+residence_region,RU-KYA,Красноярский край,10
+residence_region,UA-43,Крым,10
+residence_region,RU-KGN,Курганская область,10
+residence_region,RU-KRS,Курская область,10
+residence_region,KG,Кыргызстан,10
+residence_region,LV,Латвия,10
+residence_region,RU-LEN,Ленинградская область,10
+residence_region,RU-LIP,Липецкая область,10
+residence_region,LT,Литва,10
+residence_region,MD,Молдова,10
+residence_region,RU-MOW,Москва,10
+residence_region,RU-MOS,Московская область,10
+residence_region,RU-MUR,Мурманская область,10
+residence_region,RU-NIZ,Нижегородская область,10
+residence_region,RU-NGR,Новгородская область,10
+residence_region,RU-NVS,Новосибирская область,10
+residence_region,RU-OMS,Омская область,10
+residence_region,RU-ORE,Оренбургская область,10
+residence_region,RU-ORL,Орловская область,10
+residence_region,RU-PNZ,Пензенская область,10
+residence_region,RU-PER,Пермский край,10
+residence_region,RU-PRI,Приморский край,10
+residence_region,RU-PSK,Псковская область,10
+residence_region,RU-AL,Республика Алтай,10
+residence_region,RU-BA,Республика Башкортостан,10
+residence_region,RU-BU,Республика Бурятия,10
+residence_region,RU-DA,Республика Дагестан,10
+residence_region,RU-KL,Республика Калмыкия,10
+residence_region,RU-KR,Республика Карелия,10
+residence_region,RU-KO,Республика Коми,10
+residence_region,RU-ME,Республика Марий Эл,10
+residence_region,RU-MO,Республика Мордовия,10
+residence_region,RU-SA,Республика Саха (Якутия),10
+residence_region,RU-SE,Республика Северная Осетия — Алания,10
+residence_region,RU-TA,Республика Татарстан,10
+residence_region,RU-KK,Республика Хакасия,10
+residence_region,RU-ROS,Ростовская область,10
+residence_region,RU-RYA,Рязанская область,10
+residence_region,RU-SAM,Самарская область,10
+residence_region,RU-SPE,Санкт-Петербург,10
+residence_region,RU-SAR,Саратовская область,10
+residence_region,RU-SVE,Свердловская область,10
+residence_region,UA-40,Севастополь,10
+residence_region,RU-SMO,Смоленская область,10
+residence_region,RU-STA,Ставропольский край,10
+residence_region,RU-TAM,Тамбовская область,10
+residence_region,RU-TVE,Тверская область,10
+residence_region,RU-TOM,Томская область,10
+residence_region,RU-TUL,Тульская область,10
+residence_region,RU-TYU,Тюменская область,10
+residence_region,RU-UD,Удмуртская Республика,10
+residence_region,UZ,Узбекистан,10
+residence_region,UA,Украина,10
+residence_region,RU-ULY,Ульяновская область,10
+residence_region,RU-KHA,Хабаровский край,10
+residence_region,RU-CHE,Челябинская область,10
+residence_region,RU-CU,Чувашская Республика,10
+residence_region,RU-CHU,Чукотский автономный округ,10
+residence_region,EE,Эстония,10
+residence_region,RU-YAR,Ярославская область,10
+residence_region,unknown,не указано,90
+residence_region,unrecognized,не распознано,91
+source_region,AZ,Азербайджан,10
+source_region,RU-ALT,Алтайский край,10
+source_region,RU-AMU,Амурская область,10
+source_region,RU-ARK,Архангельская область,10
+source_region,RU-AST,Астраханская область,10
+source_region,BY,Беларусь,10
+source_region,RU-BEL,Белгородская область,10
+source_region,RU-BRY,Брянская область,10
+source_region,RU-VLA,Владимирская область,10
+source_region,RU-VLG,Вологодская область,10
+source_region,RU-VOR,Воронежская область,10
+source_region,GE,Грузия,10
+source_region,RU-YEV,Еврейская автономная область,10
+source_region,RU-ZAB,Забайкальский край,10
+source_region,RU-IVA,Ивановская область,10
+source_region,RU-IRK,Иркутская область,10
+source_region,RU-KB,Кабардино-Балкарская Республика,10
+source_region,KZ,Казахстан,10
+source_region,RU-KLU,Калужская область,10
+source_region,RU-KC,Карачаево-Черкесская Республика,10
+source_region,RU-KEM,Кемеровская область,10
+source_region,KG,Кыргызстан,10
+source_region,RU-KIR,Кировская область,10
+source_region,RU-KOS,Костромская область,10
+source_region,RU-KDA,Краснодарский край,10
+source_region,RU-KYA,Красноярский край,10
+source_region,UA-43,Крым,10
+source_region,RU-KGN,Курганская область,10
+source_region,RU-KRS,Курская область,10
+source_region,RU-LIP,Липецкая область,10
+source_region,RU-MAG,Магаданская область,10
+source_region,RU-MOW,Москва,10
+source_region,RU-MOS,Московская область,10
+source_region,RU-MUR,Мурманская область,10
+source_region,RU-NIZ,Нижегородская область,10
+source_region,RU-NGR,Новгородская область,10
+source_region,RU-NVS,Новосибирская область,10
+source_region,RU-OMS,Омская область,10
+source_region,RU-ORE,Оренбургская область,10
+source_region,RU-ORL,Орловская область,10
+source_region,RU-PNZ,Пензенская область,10
+source_region,RU-PER,Пермский край,10
+source_region,RU-PRI,Приморский край,10
+source_region,RU-PSK,Псковская область,10
+source_region,RU-AD,Республика Адыгея,10
+source_region,RU-AL,Республика Алтай,10
+source_region,RU-BA,Республика Башкортостан,10
+source_region,RU-BU,Республика Бурятия,10
+source_region,RU-DA,Республика Дагестан,10
+source_region,RU-IN,Республика Ингушетия,10
+source_region,RU-KL,Республика Калмыкия,10
+source_region,RU-KR,Республика Карелия,10
+source_region,RU-KO,Республика Коми,10
+source_region,RU-ME,Республика Марий Эл,10
+source_region,RU-MO,Республика Мордовия,10
+source_region,RU-SA,Республика Саха (Якутия),10
+source_region,RU-SE,Республика Северная Осетия — Алания,10
+source_region,RU-TA,Республика Татарстан,10
+source_region,RU-KK,Республика Хакасия,10
+source_region,RU-ROS,Ростовская область,10
+source_region,RU-RYA,Рязанская область,10
+source_region,RU-SAM,Самарская область,10
+source_region,RU-SPE,Санкт-Петербург,10
+source_region,RU-SAR,Саратовская область,10
+source_region,RU-SAK,Сахалинская область,10
+source_region,RU-SVE,Свердловская область,10
+source_region,RU-SMO,Смоленская область,10
+source_region,RU-STA,Ставропольский край,10
+source_region,RU-TAM,Тамбовская область,10
+source_region,RU-TVE,Тверская область,10
+source_region,RU-TOM,Томская область,10
+source_region,RU-TUL,Тульская область,10
+source_region,RU-TYU,Тюменская область,10
+source_region,RU-UD,Удмуртская Республика,10
+source_region,UZ,Узбекистан,10
+source_region,UA,Украина,10
+source_region,RU-ULY,Ульяновская область,10
+source_region,RU-KHA,Хабаровский край,10
+source_region,RU-CHE,Челябинская область,10
+source_region,RU-CE,Чеченская Республика,10
+source_region,RU-CU,Чувашская Республика,10
+source_region,RU-YAR,Ярославская область,10
+source_region,unknown,не указано,90
+source_region,unrecognized,не распознано,91
+birth_region,RU-SAK,Сахалинская область,10
+residence_region,RU-SAK,Сахалинская область,10

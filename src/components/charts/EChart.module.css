@@ -1,0 +1,14 @@
+.chart {
+  width: 100%;
+  /* ECharts sizes its SVG from the element's measured width; clamping it here keeps a chart that
+     has not resized yet from pushing its grid column wider than the page. */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* `fill` mode (EChart's own `fill` prop): the chart takes its size from a positioned ancestor —
+   Choropleth's `.ratio` box — instead of from `height`. */
+.fill {
+  position: absolute;
+  inset: 0;
+}

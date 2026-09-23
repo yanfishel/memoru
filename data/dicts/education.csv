@@ -1,0 +1,228 @@
+raw_value,code,method,reviewed
+грамотный,literate,manual,true
+грамотная,literate,manual,true
+неграмотный,illiterate,manual,true
+неграмотная,illiterate,manual,true
+начальное,primary,manual,true
+неполное среднее,incomplete_secondary,manual,true
+среднее,secondary,manual,true
+высшее,higher,manual,true
+малограмотный,semi_literate,manual,true
+низшее,primary,manual,true
+н/начальное,incomplete_primary,manual,true
+н/среднее,incomplete_secondary,manual,true
+4 класса,primary,manual,true
+неграмотн.,illiterate,manual,true
+незаконченное среднее,incomplete_secondary,manual,true
+малограмотная,semi_literate,manual,true
+без образования,none,manual,true
+7 классов,incomplete_secondary,manual,true
+незаконченное высшее,incomplete_higher,manual,true
+3 класса,primary,manual,true
+сельская школа,primary,manual,true
+4 кл,primary,manual,true
+"низшее, сельская школа",primary,manual,true
+5 классов,incomplete_secondary,manual,true
+Ср.,secondary,manual,true
+2 класса,primary,manual,true
+6 классов,incomplete_secondary,manual,true
+среднее специальное,secondary_special,manual,true
+"низшее, 3 года сельской школы",primary,manual,true
+3 кл,primary,manual,true
+7кл (неполное среднее),incomplete_secondary,manual,true
+высшее (профиль неизвестен),higher,manual,true
+н/высшее,incomplete_higher,manual,true
+самоучка,literate,manual,true
+малограмотн.,semi_literate,manual,true
+"начальное, 2 кл.",primary,manual,true
+среднее техническое,secondary_special,manual,true
+5 кл,incomplete_secondary,manual,true
+неоконченное высшее,incomplete_higher,manual,true
+6 кл,incomplete_secondary,manual,true
+8 классов,incomplete_secondary,manual,true
+"начальное, 3 кл.",primary,manual,true
+7 кл.,incomplete_secondary,manual,true
+"низшее, 2 года сельской школы",primary,manual,true
+1 класс,primary,manual,true
+образование среднее,secondary,manual,true
+"низшее, 4 года сельской школы",primary,manual,true
+высшее техническое,higher,manual,true
+средне-специальное,secondary_special,manual,true
+среднее специальное (профиль неизвестен),secondary_special,manual,true
+неоконченное среднее,incomplete_secondary,manual,true
+2 кл нач школы,primary,manual,true
+"начальное, 4 кл.",primary,manual,true
+средняя школа,secondary,manual,true
+незаконченное высшее (профиль неизвестен),incomplete_higher,manual,true
+среднее специальное техническое,secondary_special,manual,true
+Н/Ср.,incomplete_secondary,manual,true
+"низшее, 7 классов школы",primary,manual,true
+образование низшее,primary,manual,true
+8 кл,incomplete_secondary,manual,true
+2 кл.,primary,manual,true
+"н/среднее, 7 кл.",incomplete_secondary,manual,true
+духовная семинария,secondary,manual,true
+начальное До ареста проживал: Акмолинская обл,primary,manual,true
+высшее юридическое,higher,manual,true
+с/школа,primary,manual,true
+9 классов,incomplete_secondary,manual,true
+"начальное, 5 кл.",primary,manual,true
+"начальное, 1 кл.",primary,manual,true
+4 Г.,primary,manual,true
+высшее гуманитарное,higher,manual,true
+7 Л.,incomplete_secondary,manual,true
+высшее естественное,higher,manual,true
+9 кл,incomplete_secondary,manual,true
+среднее духовное,secondary,manual,true
+"низшее, 5 классов школы",primary,manual,true
+"низшее, 1 год сельской школы",primary,manual,true
+"начальное, спец.",primary,manual,true
+образование начальное,primary,manual,true
+10 классов,secondary,manual,true
+3 Г.,primary,manual,true
+грамотн.,literate,manual,true
+низшее образование,primary,manual,true
+10 кл,secondary,manual,true
+7 Гр.,incomplete_secondary,manual,true
+образование высшее,higher,manual,true
+окончил сельскую школу,primary,manual,true
+Церковно-приходская школа,primary,manual,true
+3 класса сельской школы,primary,manual,true
+незаконч.высшее,incomplete_higher,manual,true
+"низшее, 6 классов школы",primary,manual,true
+незаконченное среднее специальное (профиль неизвестен),incomplete_secondary,manual,true
+среднее образование,secondary,manual,true
+высшее военное,higher,manual,true
+окончил учительскую семинарию.,secondary,manual,true
+высшее экономическое,higher,manual,true
+начальное образование,primary,manual,true
+"н/среднее, 6 кл.",incomplete_secondary,manual,true
+2 Г.,primary,manual,true
+неграмотные,illiterate,manual,true
+среднее законченное,secondary,manual,true
+низшее (начальное),primary,manual,true
+3 Гр.,primary,manual,true
+4 Гр.,primary,manual,true
+высшее духовное,higher,manual,true
+5 Л.,incomplete_secondary,manual,true
+7 классов (неполное среднее),incomplete_secondary,manual,true
+высшее медицинское,higher,manual,true
+незаконченное высшее гуманитарное,incomplete_higher,manual,true
+н/среднее специальное.,incomplete_secondary,manual,true
+2 класса сельской школы,primary,manual,true
+среднее педагогическое,secondary_special,manual,true
+н/сред.,incomplete_secondary,manual,true
+Самоучкака,literate,manual,true
+"низшее, 4 класса школы",primary,manual,true
+самообразование,literate,manual,true
+среднее специальное гуманитарное,secondary_special,manual,true
+среднее спец,secondary_special,manual,true
+окончил гимназию.,secondary,manual,true
+Не Имеет,none,manual,true
+гимназия,secondary,manual,true
+6 Л.,incomplete_secondary,manual,true
+1 кл.,primary,manual,true
+"н/среднее, 5 кл.",incomplete_secondary,manual,true
+религиозное,religious,manual,true
+Низш,primary,manual,true
+незаконченное среднее специальное,incomplete_secondary,manual,true
+средне-техническое,secondary_special,manual,true
+среднее специал,secondary_special,manual,true
+окончил Тамбовскую Духовную семинарию.,secondary,manual,true
+5 Гр.,incomplete_secondary,manual,true
+"высшее, духовная семинария",secondary,manual,true
+высшее законченное,higher,manual,true
+духовное училище,incomplete_secondary,manual,true
+городское училище,incomplete_secondary,manual,true
+"среднее, 8 классов школы",secondary,manual,true
+3 группы сельской школы,primary,manual,true
+грамотный по-тибетски,literate,manual,true
+"среднее, 9 классов школы",secondary,manual,true
+начальная школа,primary,manual,true
+"среднее, городское училище",incomplete_secondary,manual,true
+техникум,secondary_special,manual,true
+1 Г.,primary,manual,true
+начальное.До ареста проживал: Южно-Казахстанская обл,primary,manual,true
+"низшее, 3 класса школы",primary,manual,true
+низ шее,primary,manual,true
+среднее специальное естественное,secondary_special,manual,true
+4 класса сельской школы,primary,manual,true
+6 Гр.,incomplete_secondary,manual,true
+незаконченное высшее техническое,incomplete_higher,manual,true
+среднее специальное духовное,secondary_special,manual,true
+окончил духовную семинарию,secondary,manual,true
+среднее медицинское,secondary,manual,true
+среднее по-тибетски,secondary,manual,true
+2 класса нач школы,primary,manual,true
+образование 7 классов,incomplete_secondary,manual,true
+2 Гр.,primary,manual,true
+высшее незаконченное,higher,manual,true
+реальное училище,secondary,manual,true
+семинария,secondary,manual,true
+8 классов народной школы,incomplete_secondary,manual,true
+незаконченное высшее естественное,incomplete_higher,manual,true
+высшее тибетское,higher,manual,true
+среднее незаконченное,secondary,manual,true
+4 группы,primary,manual,true
+"высшее, МГУ",higher,manual,true
+Н/Ср.Р.,incomplete_secondary,manual,true
+среднее военное,secondary,manual,true
+окончил юридический факультет Варшавского университета.,higher,manual,true
+высшее образование,higher,manual,true
+"начальное, 6 кл.",primary,manual,true
+"н/начальное, 2 кл.",incomplete_primary,manual,true
+образование 4 класса,primary,manual,true
+ликбез,literate,manual,true
+начальное До ареста проживал: Северо-Казахстанская обл,primary,manual,true
+высш.,higher,manual,true
+образование 3 класса,primary,manual,true
+учительская семинария,secondary,manual,true
+среднее специальное военное,secondary_special,manual,true
+4 года городского училища,primary,manual,true
+высшее педагогическое,higher,manual,true
+"низшее, церковно-приходская школа",primary,manual,true
+"н/среднее, 8 кл.",incomplete_secondary,manual,true
+"среднее, техническое",secondary,manual,true
+"среднее, Ярославская духовная семинария",secondary,manual,true
+"среднее, реальное училище",secondary,manual,true
+4 класса гимназии,primary,manual,true
+среднее специальное экономическое,secondary_special,manual,true
+3 класса городского училища,primary,manual,true
+неграмотный До ареста проживал: Акмолинская обл,illiterate,manual,true
+окончил 7 классов,incomplete_secondary,manual,true
+Низшее 4 Кл.,primary,manual,true
+среднее (незаконченное),secondary,manual,true
+2 группы сельской школы,primary,manual,true
+грамотный по-монгольски,literate,manual,true
+"низшее, 2 класса школы",primary,manual,true
+"низшее, 3 класса сельской школы",primary,manual,true
+средн.,secondary,manual,true
+4 класса городского училища,primary,manual,true
+6 классов гимназии,incomplete_secondary,manual,true
+8 Л.,incomplete_secondary,manual,true
+начальное (4 кл.),primary,manual,true
+окончил медицинский факультет Варшавского университета.,higher,manual,true
+"среднее, духовная семинария",secondary,manual,true
+10 Л.,secondary,manual,true
+начальное.До ареста проживал: Атырауская обл,primary,manual,true
+"среднее, гимназия",secondary,manual,true
+средне- техническое,secondary,manual,true
+незаконченное среднее специальное техническое,incomplete_secondary,manual,true
+"н/начальное, 7 кл.",incomplete_primary,manual,true
+окончил факультет права и экономики Познанского университета.,higher,manual,true
+"среднее, 10 классов школы",secondary,manual,true
+высшее спец.,higher,manual,true
+незаконченное высшее экономическое,incomplete_higher,manual,true
+образование 5 классов,incomplete_secondary,manual,true
+"начальное, 4 гр.",primary,manual,true
+Н/среднее 7 Л.,incomplete_secondary,manual,true
+"начальное, 3 гр.",primary,manual,true
+"н/среднее, 9 кл.",incomplete_secondary,manual,true
+образование неполное среднее,incomplete_secondary,manual,true
+духовная семинария в СПб,secondary,manual,true
+окончил 4 класса,primary,manual,true
+среднее (специальное),secondary,manual,true
+2 класса училища,primary,manual,true
+неполное высшее,incomplete_higher,manual,true
+духовное,religious,manual,true
+приходская школа,primary,manual,true

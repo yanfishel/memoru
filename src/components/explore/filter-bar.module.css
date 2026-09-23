@@ -1,0 +1,130 @@
+/* Two rows: the count and the "all filters" button pushed to opposite edges, the chips underneath
+   (2026-09-18 review). The bar sits on the page itself — no card, no padding, no background
+   (2026-09-18 experiment); its contents are unchanged. */
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.chip {
+  background: var(--ink);
+  color: var(--paper);
+  max-width: 100%;
+}
+
+.chipLabel {
+  display: inline-block;
+  max-width: 18rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.addChip,
+.clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font: inherit;
+  font-size: var(--text-xs);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  border: 1px dashed var(--rule);
+  cursor: pointer;
+}
+
+.addChip:hover,
+.clear:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
+.clear {
+  border-style: solid;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+/* Keeps the button at the right edge even when the count is missing (search unavailable). */
+.tools > :last-child {
+  margin-left: auto;
+}
+
+.total,
+.chipsLabel {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+
+.chipsLabel {
+  margin-right: 0.15rem;
+}
+
+/* Used both above the filter list and again below it (FilterDrawer.tsx) — the bottom copy needs space
+   from the last accordion item above it, the top copy needs space from the list below it, so both
+   margins apply to each instance alike. */
+.drawerActions {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.75rem 0;
+}
+
+.popoverTitle {
+  margin: 0 0 0.5rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.optionLabel {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  width: 100%;
+}
+
+.count {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.slider {
+  margin: 0.5rem 0.25rem 1.5rem;
+}
+
+.yearInputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.yearInputs > * {
+  flex: 1;
+}
+
+/* The dash between the two inputs (DimensionEditor.tsx's YearEditor): natural width, not stretched to
+   `flex: 1` like the inputs on either side of it, so it sits centred between two equal-width inputs at
+   every width instead of pinned to the left edge of its own stretched box (2026-09-18 fix). */
+.yearInputs > span {
+  flex: none;
+}

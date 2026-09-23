@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# env
+.env
+.env.*
+!.env.example
+!.env.prod.example
+# explicit: the rehearsal stack's server-side env (Plan 2b Task 6); already matched by .env.*
+.env.server
+
+# tooling
+*.tsbuildinfo
+coverage/
+.idea/
+.DS_Store
+.tmp/
+playwright-report/
+test-results/
+
+# artifacts (Plan 2b)
+.artifacts/
+.artifacts-server/
+
+# claude personal
+CLAUDE.local.md
+.claude/settings.local.json
+.superpowers/
+
+docs/*.doc
+docs/*.docx
+docs/*.rtf
+
+# Kept local and in the private archive repository, never published: design specs, plans and
+# measured notes (they name the server and local paths), generated coverage reports, agent skills.
+docs/superpowers/
+data/reports/
+.claude/

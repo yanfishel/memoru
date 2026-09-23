@@ -1,0 +1,17 @@
+/* Gives the map's own container the geometry's shape at any width. A plain CSS `aspect-ratio` cannot
+   express this: the drawn title (when shown) lives inside the same ECharts canvas as the polygons and
+   adds a fixed pixel band on top of the ratio, which `aspect-ratio` has no way to add. This is the
+   classic intrinsic-ratio trick instead — `padding-top` is resolved against the *width* of this box, so
+   `calc(100% / var(--map-aspect) + var(--map-gap, 0px))` gives exactly `width / aspect + gap`, and the
+   child (EChart in `fill` mode) is positioned to cover the resulting box. See MAP_ASPECT / MAP_TITLE_GAP
+   in lib/map.ts. */
+.ratio {
+  position: relative;
+  width: 100%;
+}
+
+.ratio::before {
+  content: "";
+  display: block;
+  padding-top: calc(100% / var(--map-aspect) + var(--map-gap, 0px));
+}

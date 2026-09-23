@@ -1,0 +1,7 @@
+.lead {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}

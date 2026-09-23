@@ -1,0 +1,129 @@
+.wrap {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 0.75rem 1rem 1rem;
+}
+
+.range {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.table {
+  --table-border-color: var(--rule);
+}
+
+/* Each data row is itself the link (a real <a> still wraps the name, for keyboard/screen-reader
+   access and native ctrl/middle-click) — the pointer cursor says so across the whole row, not just
+   the name. Not applied to the skeleton placeholder rows, which go nowhere. */
+.row {
+  cursor: pointer;
+}
+
+/* The last column carries the photo mark and nothing else: no heading, no width to spare. */
+.photoCell {
+  width: 1%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.photoIcon {
+  flex: none;
+  color: var(--muted);
+  vertical-align: middle;
+  /* globals.css caps every svg at `max-width: 100%`, which in this 1%-wide column resolves to zero and
+     collapses the icon (measured 0x19 before this line). The floor keeps it at its own size. */
+  min-width: 19px;
+}
+
+/* The bottom row: the count on the left, the pager pushed to the right edge (same shape as the
+   filter bar's own top row, filter-bar.module.css's .tools). */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.sortButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font: inherit;
+  font-weight: 500;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Unsortable columns stay focusable and keep pointer events so their tooltip opens; only the look is disabled. */
+.sortButton[aria-disabled="true"] {
+  cursor: default;
+  color: var(--muted);
+}
+
+.sortIcon {
+  opacity: 0.6;
+}
+
+/* Plain text, on purpose: the row itself is the link now (.row's cursor: pointer), so the name no
+   longer needs to look like one — a real <a> still sits here underneath for keyboard/screen-reader
+   access, it just isn't styled as a link. */
+.name {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.pagination {
+  justify-content: flex-end;
+}
+
+/* Below the sm breakpoint every row becomes a card; the header row goes, each cell shows its column name. */
+@media (max-width: $mantine-breakpoint-sm) {
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border: 0;
+    padding: 0;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    color: var(--muted);
+    font-size: var(--text-xs);
+  }
+
+  .table td:first-child::before {
+    display: none;
+  }
+
+  /* Stacked instead of squeezed onto one line: the count above, the pager centered below. */
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,10 @@
+/* Space below the shared search field: the field itself carries no bottom margin (the home page's
+   hero tunes that gap on its own), so this page adds it. Matches the page's own rhythm — the same
+   1.25rem `.bar` below already uses to separate itself from the result table. */
+.searchWrap {
+  margin-bottom: 1.25rem;
+}
+
+.notice {
+  margin-bottom: 1rem;
+}

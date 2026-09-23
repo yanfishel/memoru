@@ -1,0 +1,52 @@
+{
+  "name": "memoru",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test:e2e": "playwright test",
+    "etl": "tsx --env-file-if-exists=.env scripts/etl/cli.ts",
+    "geo:build": "tsx scripts/geo/build-geojson.ts"
+  },
+  "dependencies": {
+    "@mantine/core": "^9.6.1",
+    "@mantine/hooks": "^9.6.1",
+    "@tabler/icons-react": "^3.46.0",
+    "commander": "^15.0.0",
+    "csv-parse": "^7.0.2",
+    "csv-stringify": "^6.8.3",
+    "drizzle-orm": "^0.45.2",
+    "echarts": "^6.1.0",
+    "meilisearch": "^0.62.0",
+    "next": "16.3.5",
+    "pg": "^8.23.0",
+    "pg-copy-streams": "^7.0.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "saxes": "^6.0.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^20",
+    "@types/pg": "^8.23.1",
+    "@types/pg-copy-streams": "^1.2.5",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "mapshaper": "^0.7.61",
+    "postcss-preset-mantine": "^1.18.0",
+    "postcss-simple-vars": "^7.0.1",
+    "tsx": "^4.23.13",
+    "typescript": "^5",
+    "vitest": "^5.0.1"
+  },
+  "packageManager": "pnpm@11.17.0"
+}

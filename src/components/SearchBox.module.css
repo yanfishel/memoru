@@ -1,0 +1,59 @@
+.search {
+  margin: 0;
+  max-width: 40rem;
+}
+
+/* The input and the button read as one control: one border and radius on the row itself, the input
+   painted unstyled (SearchBox.tsx) so it contributes no border of its own, `overflow: hidden` clips
+   both children to the row's rounded corners, and the button's own left corners are squared off so
+   no seam shows where it meets the input. */
+.searchRow {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.searchRow:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.searchInput {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+/* `type="search"` already gives us a themed clear button (below) inside `rightSection`; the browser's
+   own webkit cancel icon would otherwise double up with it. */
+.searchInput input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+  appearance: none;
+}
+
+.clearButton {
+  background: transparent;
+  color: var(--muted);
+}
+
+.clearButton:hover {
+  background: var(--rule);
+  color: var(--ink);
+}
+
+/* Ink on paper in both schemes; Mantine's own colour scales do not carry the warm tokens. */
+.searchSubmit {
+  background: var(--ink);
+  color: var(--paper);
+  border: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex: 0 0 auto;
+}
+
+.searchSubmit:hover {
+  background: var(--accent);
+  color: var(--paper);
+}

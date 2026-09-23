@@ -1,0 +1,319 @@
+/* Hero band: the hero and the four stat cards read as one opening block rather than two things
+   floating on the page. The wash under them is the global one every page opens on (`.page::before` in
+   globals.css); the band's own job is the grouping, the space and the rule that closes it. That rule
+   is what makes the block a block — the wash alone fades out too gently to say where it ends — and it
+   runs the whole viewport, which is what the inline margins are for: they pull the band out of
+   `.page`'s measure and the matching inline padding puts its content back on the page grid. Both
+   percentages resolve against `.page`'s content width, so the band comes out exactly one viewport
+   wide. `body { overflow-x: clip }` in globals.css absorbs the scrollbar's share of `100vw`; `clip`
+   rather than `hidden`, which would break the sticky header. The band also takes over the hero's and
+   the stats' own outer margins, so nothing below it moves. */
+.heroBand {
+  margin-inline: calc(50% - 50vw);
+  margin-bottom: 3rem;
+  padding: 1.5rem calc(50vw - 50%) 2.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  /* The card's bottom edge lines up with the search row's bottom, not the title's top: the left
+     column (title + lead + search) is normally the taller one, so aligning both columns to the end
+     of the row pins the card there instead of floating at the top. */
+  align-items: end;
+}
+
+.accentWord {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* Extra space after the title, on top of the global `h1 { margin: 0 0 0.5rem }`: with `align-items:
+   end` on `.hero`, the featured card (the taller column) pins both columns to its own bottom, so the
+   left column's own height controls how far below the card's top the title sits. Kept modest on
+   purpose — the maintainer wants a visible gap here, not the title level with the card's top (see
+   `.lead` below for the rest of it; 2026-09-18 review, backed off the same day). */
+.hero h1 {
+  margin-bottom: 1.25rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+/* Featured person: `.featured` is the outer link (hover lift, no underline); `.featuredCard` is the
+   Paper inside it (layout, background, shadow) — split so the whole card can be one <a>. */
+.featured {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.featured:hover {
+  transform: translateY(-2px);
+}
+
+.featuredCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+/* The label sits above this row, spanning the card's full width, so the photo starts level with
+   the name rather than the label (2026-09-18 review). Below it: the name/born-arrested line on the
+   left, the photo on the right (mirrors the person page, where the photo sits beside the narrative
+   on the right too); the timeline (further below, unchanged) spans the card's full width. */
+.featuredTop {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* A fixed 120x130 frame (2026-09-18 round-4 review), not just a capped one: reload-to-reload the
+   card must be the same height regardless of which photo's aspect ratio came up, or the whole page
+   jumps. Bridges into PersonPhoto's own module (person.module.css) the same way `--photo-width`
+   already did for the figure's width alone — `--photo-height` now fixes its height too, and
+   `--photo-img-width`/`--photo-img-height` make the <img> itself fill that frame (100%/100%) so
+   `.photoImg`'s `object-fit: scale-down` can centre it, shrunk to fit or left at natural size,
+   never upscaled. This supersedes round 3's `--photo-max-height` clamp entirely (removed from
+   person.module.css) — a fixed frame makes a height *cap* redundant. The frame's own dimensions
+   here are independent of whatever PersonPhoto renders inside it (including nothing, on a load
+   failure — see PersonPhoto.tsx's silent removal), so the card's height stays identical whether the
+   photo loads, is unusually shaped, or fails outright; see FeaturedPerson.tsx for why that's the
+   chosen behaviour over collapsing the frame on failure. */
+.featuredPhoto {
+  --photo-width: 120px;
+  --photo-height: 130px;
+  --photo-img-width: 100%;
+  --photo-img-height: 100%;
+  flex: 0 0 120px;
+  width: 120px;
+  height: 130px;
+}
+
+.featuredInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.featuredLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.featuredName {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.featuredLine {
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.timeline {
+  display: flex;
+  margin-top: 0.75rem;
+  font-size: var(--text-xs);
+}
+
+.step,
+.stepAccent {
+  flex: 1;
+  position: relative;
+  border-top: 2px solid var(--rule);
+  padding: 0.4rem 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.step::before,
+.stepAccent::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.stepAccent::before {
+  background: var(--accent);
+}
+
+.step b,
+.stepAccent b {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.step span,
+.stepAccent span {
+  color: var(--muted);
+}
+
+/* Stat cards */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  /* The band's own padding carries the space below the cards; they only keep the gap to the hero. */
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column-reverse;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.stat dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.stat dt {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+/* Story */
+.story h2 {
+  margin-top: 0;
+}
+
+.chapter {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+
+.chapterWide {
+  grid-template-columns: 1fr;
+}
+
+.chapterText h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.chapterChart {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 1rem;
+}
+
+/* Unequal on purpose (maintainer review): "Приговор" carries the data — its wrapped category labels
+   and its value axis need the room — so it gets the wider column; "Пол" only needs enough width for a
+   readable donut plus its horizontal legend underneath (see PIE_LEGEND_HEIGHT in charts.ts — the
+   legend wraps onto a second line at this column's width, which is expected, not a defect), so 3:2
+   gives it noticeably less without crowding either chart. Stacks to one column per chart below 40em,
+   same as before (media query below). */
+.pair {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 1rem;
+}
+
+.note {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+/* Story's arrests and geography caveats (the two-<p> form) break the rule sentence(s) and the
+   unknown count onto separate lines without the gap a standalone paragraph would get. */
+.note p {
+  margin: 0;
+}
+
+/* Reveal states (see Reveal.tsx) */
+.revealHidden {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.revealShown {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+@media (max-width: 60em) {
+  .hero,
+  .chapter {
+    grid-template-columns: 1fr;
+  }
+
+  /* One column makes the hero tall, so the band grows with it while the wall keeps its six lines:
+     centred, they landed in the one strip the featured card covers. Anchored to the top, with the
+     fade measured in pixels rather than a share of a band whose height now varies, they fill the
+     space beside the title and the search box, which is where there is room to see them. */
+  .wall {
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    padding-top: 3.5rem;
+    mask-image:
+      linear-gradient(to bottom, transparent, #000 3.5rem, #000 calc(100% - 4rem), transparent),
+      linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  }
+
+  .wallName {
+    padding-right: 1.1rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pair {
+    grid-template-columns: 1fr;
+  }
+
+  /* Beside a 120px photo, a phone-width card left the text column too narrow: the name broke one
+     word per line and the born/arrest line shrank to a ribbon. Stacking gives the text the card's
+     full width (align-items: stretch overrides the row layout's flex-start, which would otherwise
+     size .featuredInfo to its content rather than the container) and keeps the photo below it, at
+     its usual width but centred rather than pinned to one side. */
+  .featuredTop {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .featuredPhoto {
+    flex: 0 0 auto;
+    align-self: center;
+  }
+}

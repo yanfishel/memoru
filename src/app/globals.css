@@ -1,0 +1,205 @@
+/* Design tokens for the whole site (spec §3.1).
+   The colour values come from the Mantine cssVariablesResolver in src/theme/theme.ts, which sets
+   --paper, --surface, --rule, --ink, --muted, --accent and --viz-* per colour scheme on :root.
+   This file adds the derived tokens, the font stacks, the paper grain and the base typography. */
+:root {
+  --font-sans: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: var(--font-literata), Georgia, "Times New Roman", serif;
+  --measure: 72rem;
+  --gutter: 1rem;
+  /* `.page`'s own top padding. A full-width band that must sit flush under the header cancels it with
+     a negative margin and restores it as its own padding, so the value has to live in one place. */
+  --page-top: 1.5rem;
+  /* How far the top wash reaches down the page before it has faded out entirely. */
+  --wash-height: 30rem;
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+
+  --accent-soft: color-mix(in srgb, var(--accent) 14%, transparent);
+  --shadow-card: 0 1px 2px rgba(30, 27, 23, 0.04), 0 6px 20px rgba(30, 27, 23, 0.06);
+
+  /* Aliases for the modules Plans 4b and 4c will restyle; nothing new should use them. */
+  --bg: var(--paper);
+  --fg: var(--ink);
+}
+
+:root[data-mantine-color-scheme="dark"] {
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.55;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Paper grain: an inline SVG noise tile, fixed behind the content. No file, no request. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.55;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.3 0 0 0 0 0.25 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+
+:root[data-mantine-color-scheme="dark"] body::before {
+  opacity: 0.3;
+}
+
+/* Full-width bands (the home hero) reach past `.page` with `margin-inline: calc(50% - 50vw)`, and
+   `100vw` counts the scrollbar, so the page would gain a horizontal scrollbar of its own. `clip`
+   instead of `hidden`: `hidden` makes body a scroll container and kills the sticky header. */
+body {
+  overflow-x: clip;
+}
+
+.page {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: var(--page-top) var(--gutter) 3rem;
+}
+
+/* The top wash: every page opens on a warm, top-weighted field that fades out entirely before
+   `--wash-height`. It hangs off `.page` rather than `body` so it starts flush under the header and
+   scrolls away with the content, and it breaks out to the full viewport the same way a full-width
+   band does — `.page` is centred and capped at `--measure`, the wash is not. `z-index: -1` puts it
+   over the paper and the grain but under everything the page draws. `--ink` carries the colour
+   scheme, so the same rule reads as a shadow on paper and as a lift on graphite. */
+.page::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: calc(50% - 50vw);
+  width: 100vw;
+  height: var(--wash-height);
+  pointer-events: none;
+  background-image:
+    radial-gradient(120% 70% at 50% 0%, color-mix(in srgb, var(--accent) 5%, transparent), transparent 72%),
+    linear-gradient(to bottom, color-mix(in srgb, var(--ink) 5%, transparent), transparent 88%);
+}
+
+:root[data-mantine-color-scheme="dark"] .page::before {
+  /* A light wash on graphite reads weaker than a dark one on paper at the same strength. */
+  background-image:
+    radial-gradient(120% 70% at 50% 0%, color-mix(in srgb, var(--accent) 7%, transparent), transparent 72%),
+    linear-gradient(to bottom, color-mix(in srgb, var(--ink) 7%, transparent), transparent 88%);
+}
+
+a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* A page title is followed by its page: 2rem of air below it (2026-09-18 review). The home hero
+   and the person page's header override this — there the h1 heads a tight lockup with its own
+   subtitle line, not a page. */
+h1 {
+  margin: 0 0 2rem;
+  font-size: 2.625rem;
+  line-height: 1.08;
+}
+
+h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+/* A chart's <figure> wrapper carries the browser's default `margin: 1em 40px`, which shows up as
+   stray air above a chart and as lost width beside it (2026-09-18 review). */
+figure {
+  margin: 0;
+}
+
+/* Shown only on paper (see @media print below). */
+.print-only {
+  display: none;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 40em) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  .page {
+    max-width: none;
+    padding: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

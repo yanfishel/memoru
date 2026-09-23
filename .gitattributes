@@ -1,0 +1,27 @@
+# This repository is written on Windows and runs on Linux. `core.autocrlf=true` checks text files
+# out with CRLF, which is harmless for most of them and fatal for a few: a shell script whose
+# shebang ends `#!/bin/sh\r` makes the kernel look for an interpreter named `/bin/sh\r`, and the
+# error it reports is "no such file or directory" — naming the script, not the interpreter, which
+# sends you hunting for a missing file that is right there. That cost this project one failed
+# publish on the first real deployment, 2026-09-19.
+#
+# Everything that is read by Linux — directly, or through a Docker image — is pinned to LF here.
+
+*.sh            text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+*.sql           text eol=lf
+Dockerfile      text eol=lf
+Caddyfile       text eol=lf
+.env.example    text eol=lf
+.env.prod.example text eol=lf
+.dockerignore   text eol=lf
+
+# Binary, so git never tries to translate line endings inside them.
+*.ttf           binary
+*.png           binary
+*.ico           binary
+*.zip           binary
+*.7z            binary
+*.gz            binary
+*.dump          binary

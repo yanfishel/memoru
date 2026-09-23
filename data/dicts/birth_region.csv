@@ -1,0 +1,273 @@
+raw_value,code,method,reviewed
+ЧО,RU-CHE,manual,true
+Челябинская обл.,RU-CHE,manual,true
+Башкирия,RU-BA,manual,true
+Томская обл.,RU-TOM,manual,true
+Московская обл.,RU-MOS,manual,true
+Воронежская обл.,RU-VOR,manual,true
+Саратовская обл.,RU-SAR,manual,true
+Смоленская обл.,RU-SMO,manual,true
+Томская губ.,RU-TOM,manual,true
+Ульяновская обл.,RU-ULY,manual,true
+Рязанская обл.,RU-RYA,manual,true
+Ленинградская обл.,RU-LEN,manual,true
+Орловская обл.,RU-ORL,manual,true
+Самарская обл.,RU-SAM,manual,true
+Омская обл.,RU-OMS,manual,true
+Читинская обл.,RU-ZAB,manual,true
+Украина,UA,manual,true
+Калмыкия,RU-KL,manual,true
+Курская обл.,RU-KRS,manual,true
+Псковская обл.,RU-PSK,manual,true
+Кировская обл.,RU-KIR,manual,true
+Ставропольский кр.,RU-STA,manual,true
+Астраханская губ.,RU-AST,manual,true
+Ярославская обл.,RU-YAR,manual,true
+Казахстан,KZ,manual,true
+Пензенская обл.,RU-PNZ,manual,true
+Мордовия,RU-MO,manual,true
+Волынская губ.,UA,manual,true
+Калужская обл.,RU-KLU,manual,true
+Коми АССР,RU-KO,manual,true
+Алма-Атинская обл.,KZ,manual,true
+г. Ленинград,RU-SPE,manual,true
+Красноярский кр.,RU-KYA,manual,true
+Львовская губ.,UA,manual,true
+Калининская обл.,RU-TVE,manual,true
+г. Москва,RU-MOW,manual,true
+Тамбовская обл.,RU-TAM,manual,true
+Восточно-Казахстанская обл.,KZ,manual,true
+Латвия,LV,manual,true
+Белоруссия,BY,manual,true
+Свердловская обл.,RU-SVE,manual,true
+Иркутская обл.,RU-IRK,manual,true
+Ивановская обл.,RU-IVA,manual,true
+Верх. Балкария,RU-KB,manual,true
+Чувашия,RU-CU,manual,true
+Липецкая обл.,RU-LIP,manual,true
+Аз.ССР,AZ,manual,true
+Самарская губ.,RU-SAM,manual,true
+Ростовская обл.,RU-ROS,manual,true
+Казанская обл.,RU-TA,manual,true
+Ровенская обл.,UA,manual,true
+Пинская губ.,BY,manual,true
+Киевская обл.,UA,manual,true
+Киргизия,KG,manual,true
+Удмуртия,RU-UD,manual,true
+Горьковская обл.,RU-NIZ,manual,true
+Москва,RU-MOW,manual,true
+Марий Эл,RU-ME,manual,true
+Тульская обл.,RU-TUL,manual,true
+Литва,LT,manual,true
+Кенделен,RU-KB,manual,true
+Барановичская губ.,BY,manual,true
+Куйбышевская обл.,RU-SAM,manual,true
+Новосибирской обл.,RU-NVS,manual,true
+Татарстан,RU-TA,manual,true
+Южно-Казахстанская обл.,KZ,manual,true
+Смоленская,RU-SMO,manual,true
+Омская губ.,RU-OMS,manual,true
+Тамбовская губ.,RU-TAM,manual,true
+Саратовская губ.,RU-SAR,manual,true
+Украинская ССР,UA,manual,true
+Забайкальская обл.,RU-ZAB,manual,true
+Калмыцкий р-н,RU-KL,manual,true
+Барановичская обл.,BY,manual,true
+Полтавская губ.,UA,manual,true
+Сталинградская обл.,RU-VGG,manual,true
+Одесская обл.,UA,manual,true
+БМАССР,RU-BU,manual,true
+УССР,UA,manual,true
+Актюбинская обл.,KZ,manual,true
+Черниговская губ.,UA,manual,true
+Алтайский кр.,RU-ALT,manual,true
+Тюменская обл.,RU-TYU,manual,true
+Ленинградская (Новгородская) обл.,RU-NGR,manual,true
+Винницкая обл.,UA,manual,true
+Виленская губ.,LT,manual,true
+Владимирская обл.,RU-VLA,manual,true
+Карагандинская обл.,KZ,manual,true
+Сталинская обл.,UA,manual,true
+Рязанская губ.,RU-RYA,manual,true
+Гродненская губ.,BY,manual,true
+Карелия,RU-KR,manual,true
+Кустанайская обл.,KZ,manual,true
+Вятская губ.,RU-KIR,manual,true
+Курская губ.,RU-KRS,manual,true
+Оренбургская обл.,RU-ORE,manual,true
+Краснодарский кр.,RU-KDA,manual,true
+Вологодская обл.,RU-VLG,manual,true
+Воронежская губ.,RU-VOR,manual,true
+Харьковская обл.,UA,manual,true
+г. Одесса,UA,manual,true
+Эстония,EE,manual,true
+Архангельская обл.,RU-ARK,manual,true
+Минская губ.,BY,manual,true
+Северо-Казахстанская обл.,KZ,manual,true
+Днепропетровская обл.,UA,manual,true
+Новосибирская обл.,RU-NVS,manual,true
+Витебская губ.,BY,manual,true
+Киевская губ.,UA,manual,true
+Черниговская обл.,UA,manual,true
+Амурская обл.,RU-AMU,manual,true
+Западно-Казахстанская обл.,KZ,manual,true
+Бурятия,RU-BU,manual,true
+Екатеринославская губ.,UA,manual,true
+Тарнопольская обл.,UA,manual,true
+Семипалатинская обл.,KZ,manual,true
+Житомирская обл.,UA,manual,true
+Запорожская обл.,UA,manual,true
+Новгородская обл.,RU-NGR,manual,true
+Нижегородская обл.,RU-NIZ,manual,true
+Орловская губ.,RU-ORL,manual,true
+Забайкальская область,RU-ZAB,manual,true
+г. Казань,RU-TA,manual,true
+Московская губ.,RU-MOS,manual,true
+Могилевская губ.,BY,manual,true
+Тверская губ.,RU-TVE,manual,true
+Чистопольская обл.,RU-TA,manual,true
+Нижний Чегем,RU-KB,manual,true
+Пензенская губ.,RU-PNZ,manual,true
+Оренбургская губ.,RU-ORE,manual,true
+г. Минск,BY,manual,true
+БССР,BY,manual,true
+Херсонская губ.,UA,manual,true
+Гродненская обл.,BY,manual,true
+Безенги,RU-KB,manual,true
+Калужская губ.,RU-KLU,manual,true
+г. Рига,LV,manual,true
+Краснодарский край,RU-KDA,manual,true
+Харьковская губ.,UA,manual,true
+Ярославская губ.,RU-YAR,manual,true
+Тульская губ.,RU-TUL,manual,true
+Полтавская обл.,UA,manual,true
+Брестская губ.,BY,manual,true
+Смоленская губ.,RU-SMO,manual,true
+Витебская обл.,BY,manual,true
+Пермская губ.,RU-PER,manual,true
+Приморский кр.,RU-PRI,manual,true
+Вилейская обл.,BY,manual,true
+Украины,UA,manual,true
+Дагестан,RU-DA,manual,true
+Минская обл.,BY,manual,true
+Курганская обл.,RU-KGN,manual,true
+Кашхатау,RU-KB,manual,true
+Владимирская губ.,RU-VLA,manual,true
+Симбирская губ.,RU-ULY,manual,true
+Могилевская обл.,BY,manual,true
+Брянская обл.,RU-BRY,manual,true
+Белорусская ССР,BY,manual,true
+Гурьевская обл.,KZ,manual,true
+Донская обл.,RU-ROS,manual,true
+Кзыл-Ординская обл.,KZ,manual,true
+Орджоникидзевский край,RU-STA,manual,true
+Ворошиловградская обл.,UA,manual,true
+Эльбрус,RU-KB,manual,true
+Коми Республика,RU-KO,manual,true
+Пинская обл.,BY,manual,true
+г. Санкт-Петербург,RU-SPE,manual,true
+Верх. Баксан,RU-KB,manual,true
+Лифляндская губ.,LV,manual,true
+Чкаловская обл.,RU-ORE,manual,true
+Вологодская губ.,RU-VLG,manual,true
+Донецкая обл.,UA,manual,true
+Казанская губ.,RU-TA,manual,true
+Омская область,RU-OMS,manual,true
+Акмолинская обл.,KZ,manual,true
+БАССР,RU-BA,manual,true
+Бакинская губ. (Аз.ССР),AZ,manual,true
+Еврейская АО,RU-YEV,manual,true
+Молдавия,MD,manual,true
+Хабаз,RU-KB,manual,true
+Тобольская губ.,RU-TYU,manual,true
+Нижегородская губ.,RU-NIZ,manual,true
+Белая Речка,RU-KB,manual,true
+Ставропольская губ.,RU-STA,manual,true
+Житомирская область,UA,manual,true
+Якутская АССР,RU-SA,manual,true
+Родионо-Несветаевский р-н,RU-ROS,manual,true
+Хакасия,RU-KK,manual,true
+Якутия,RU-SA,manual,true
+г. Киев,UA,manual,true
+Чистопольский р-н,RU-TA,manual,true
+Орджоникидзевский кр.,RU-STA,manual,true
+Псковская губ.,RU-PSK,manual,true
+г. Таганрог,RU-ROS,manual,true
+г. Вильно,LT,manual,true
+Алтайский край,RU-ALT,manual,true
+г. Пермь,RU-PER,manual,true
+Уфимская губ.,RU-BA,manual,true
+Донского Войска обл.,RU-ROS,manual,true
+Львовская обл.,UA,manual,true
+Пермская обл.,RU-PER,manual,true
+Николаевская обл.,UA,manual,true
+Яникой,RU-KB,manual,true
+Тукаевский р-н,RU-TA,manual,true
+Санкт-Петербург,RU-SPE,manual,true
+Курляндская губ.,LV,manual,true
+Татарская АССР,RU-TA,manual,true
+Витебской губ.,BY,manual,true
+Алтайская губ.,RU-ALT,manual,true
+Лениногорский р-н,RU-TA,manual,true
+г. Витебск,BY,manual,true
+Грузия,GE,manual,true
+Мамадышский р-н,RU-TA,manual,true
+Томск,RU-TOM,manual,true
+Липецкий р-н,RU-LIP,manual,true
+Могилевской губ.,BY,manual,true
+Хасанья,RU-KB,manual,true
+Грузинская ССР,GE,manual,true
+Саратовская область (АССР Немцев Поволжья),RU-SAR,manual,true
+Костромская губ.,RU-KOS,manual,true
+Былым,RU-KB,manual,true
+Каменец-Подольская обл.,UA,manual,true
+Павлодарская обл.,KZ,manual,true
+Актопрак,RU-KB,manual,true
+г. Смоленск,RU-SMO,manual,true
+Волынская обл.,UA,manual,true
+Волгоградская обл.,RU-VGG,manual,true
+Тверская обл.,RU-TVE,manual,true
+ЧАО,RU-CHU,manual,true
+г. Иркутска,RU-IRK,manual,true
+г.Ленинград,RU-SPE,manual,true
+Лаишевский р-н,RU-TA,manual,true
+Черновицкая обл.,UA,manual,true
+Альметьевский р-н,RU-TA,manual,true
+Узбекистан,UZ,manual,true
+г. Уфа,RU-BA,manual,true
+Саратовская обл. (пр.: АССР немцев Поволжья),RU-SAR,manual,true
+Высокогорский р-н,RU-TA,manual,true
+Подольская губ.,UA,manual,true
+Булунгу,RU-KB,manual,true
+Ковенская губ.,LT,manual,true
+Станиславовская губ.,UA,manual,true
+ТАССР,RU-TA,manual,true
+Актанышский р-н,RU-TA,manual,true
+Ленинград,RU-SPE,manual,true
+Крымская АССР,UA-43,manual,true
+Крымская обл.,UA-43,manual,true
+Республика Крым,UA-43,manual,true
+Крым,UA-43,manual,true
+Крыма,UA-43,manual,true
+г. Симферополь,UA-43,manual,true
+Симферопольский р-н,UA-43,manual,true
+г. Керчь,UA-43,manual,true
+г.Керчь,UA-43,manual,true
+г. Феодосия,UA-43,manual,true
+Феодосийский р-н,UA-43,manual,true
+г. Евпатория,UA-43,manual,true
+Евпаторийский р-н,UA-43,manual,true
+г. Ялта,UA-43,manual,true
+Ялтинский р-н,UA-43,manual,true
+Джанкойский р-н,UA-43,manual,true
+г. Севастополь,UA-40,manual,true
+г.Севастополь,UA-40,manual,true
+Севастополь,UA-40,manual,true
+г. Севастополя,UA-40,manual,true
+г. Севастополе,UA-40,manual,true
+Севастополе,UA-40,manual,true
+Севастопольский р-н,UA-40,manual,true
+Костромская область,RU-KOS,manual,true
+ГССР,GE,manual,true
+Сахалинская обл.,RU-SAK,manual,true
+Сталинградская обл. (Волгоградская обл.),RU-VGG,manual,true

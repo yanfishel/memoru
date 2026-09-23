@@ -1,0 +1,74 @@
+# Code deploys (README, "Deployment"): publishing a release
+# vX.Y.Z checks the code, pushes ghcr.io/<owner>/memoru:{vX.Y.Z,latest} and switches the server to
+# vX.Y.Z. A manual run with an existing tag only deploys it, which is how code is rolled back.
+# Data deploys (ship → publish) never go through here.
+name: release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing image tag to deploy (vX.Y.Z), e.g. to roll back"
+        required: true
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    if: github.event_name == 'release'
+    uses: ./.github/workflows/ci.yml
+
+  build:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:${{ github.event.release.tag_name }}
+            ghcr.io/${{ github.repository }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy:
+    needs: build
+    # A release deploys only after a successful build; a manual run has no build and deploys directly.
+    if: ${{ !cancelled() && (needs.build.result == 'success' || github.event_name == 'workflow_dispatch') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the tag over SSH
+        env:
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          # A variable, not a secret: the user name is not sensitive, and as a secret it masked every
+          # "memoru" in the logs, image names included.
+          DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+          # The server's authorized_keys runs deploy.sh for this key whatever is sent; the tag is its only input.
+          ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes \
+            "$DEPLOY_USER@$DEPLOY_HOST" "$TAG"

@@ -1,0 +1,133 @@
+.footer {
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.25rem var(--gutter) 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* Mirrors SiteHeader.module.css's `.title`/`.title:hover` — same lockup, same hover tint — but sized
+   for the footer rather than the sticky bar. */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  color: var(--ink);
+  text-decoration: none;
+  margin-bottom: 0.6rem;
+}
+
+.brand:hover {
+  color: var(--accent);
+}
+
+/* The copyright and the one-line description read as one muted sentence under the lockup. */
+.description {
+  margin: 0 0 0.25rem;
+}
+
+/* Small-caps column headings, the same treatment as the card titles elsewhere on the site
+   (person.module.css's `.cardTitle`). */
+.heading {
+  display: block;
+  margin: 0 0 0.6rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: var(--ink);
+}
+
+.credits {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.logo {
+  justify-self: start;
+  display: inline-flex;
+}
+
+.logoImage {
+  height: 1rem;
+  width: auto;
+  opacity: 0.85;
+  filter: invert(1);
+}
+
+:global([data-mantine-color-scheme="dark"]) .logoImage {
+  filter: none;
+}
+
+.madeWith {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.heart {
+  color: #c0392b;
+}
+
+.icons {
+  justify-self: end;
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 40em) {
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .credits {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .logo,
+  .icons {
+    justify-self: center;
+  }
+}

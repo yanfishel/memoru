@@ -1,0 +1,432 @@
+.article {
+  max-width: none;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+/* The name heads the lockup with the life years and the badges right under it, so it keeps the
+   tight spacing rather than the global page-title margin. */
+.header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.crumbs {
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.subhead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.badgeNeutral { background: var(--accent-soft); color: var(--ink); }
+.badgeAccent { background: var(--accent); color: var(--paper); }
+.badgeOk { background: color-mix(in srgb, var(--ok) 18%, transparent); color: var(--ok); }
+.badgeMuted { background: color-mix(in srgb, var(--muted) 16%, transparent); color: var(--muted); }
+
+/* A subheading of its own, under the h1 and above the badges (2026-09-17 review): larger than the
+   badge row but clearly subordinate to the name. */
+.lifeYears {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: var(--text-lg);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Narrative and photo read as one unit (spec §5): the photo sits to the right of the narrative on
+   wide screens — an infobox-style placement, echoing where the timeline/source column sits further
+   down — and above it on phones, reversed visually only, so DOM/print/reading order keeps the
+   narrative first. */
+.narrativeBlock {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.narrative {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.55;
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.narrative p {
+  margin: 0 0 0.75rem;
+}
+
+.narrative p:last-child {
+  margin-bottom: 0;
+}
+
+/* `--photo-width`/`--photo-height` let a caller size the photo without a second component: the
+   home page's FeaturedPerson wraps PersonPhoto in a container that sets both (CSS custom
+   properties cascade across module boundaries, unlike class names) to a fixed 120x130 frame
+   (2026-09-18 round-4 review) so the card's height never depends on which photo happened to be
+   picked; the person page leaves both unset, so `height` falls back to `auto` (grows with the
+   image, as always) and `width` to its usual 240px column — this rule is otherwise unchanged from
+   round 1, and round 3's `--photo-max-height` clamp is gone: a fixed frame makes it redundant. */
+.photo {
+  flex: 0 0 auto;
+  width: var(--photo-width, 240px);
+  height: var(--photo-height, auto);
+  margin: 0;
+}
+
+/* `--photo-img-width`/`--photo-img-height` (round 4) mirror the pair above, for the <img> itself:
+   unset on the person page, so `width`/`height` stay `auto` — an old scan sizes itself, `max-width:
+   100%` only ever shrinks it to fit `.photo`'s column, never grows it past its natural width (2026-
+   09-17 review), exactly as before. The home card sets both to `100%`, filling its fixed frame;
+   `object-fit: scale-down` then centres the image inside that frame, shrinking it to fit if it's
+   too big and leaving it at natural size (never upscaled) if it's smaller than the frame — the
+   frame's own background (the card's) shows through the resulting margins. `scale-down`, not the
+   literal `contain` the round-4 brief named, is the deliberate choice: `contain` alone would
+   upscale a photo smaller than the 120x130 frame to fill it, which breaks the "never upscaled past
+   natural size" rule this file has kept since round 1 — for every photo at or above the frame's
+   own size (the overwhelming majority) the two are visually identical, since `scale-down` only ever
+   diverges from `contain` by refusing to enlarge. On the person page, both properties resolve to
+   `auto` (no fixed box `.photo`/`.photoImg` reads), the natural-size case `object-fit` needs a
+   determinate box to have any effect on, so `scale-down` is a no-op there too, same as round 3's
+   `contain` was. */
+.photoImg {
+  display: block;
+  width: var(--photo-img-width, auto);
+  max-width: 100%;
+  height: var(--photo-img-height, auto);
+  object-fit: scale-down;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+}
+
+.photoCaption {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: var(--text-xs);
+  line-height: 1.4;
+}
+
+.photoCaption a {
+  color: inherit;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.main,
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.side {
+  position: sticky;
+  top: 4.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 1rem 1.25rem;
+}
+
+.cardTitle {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rows {
+  display: grid;
+  grid-template-columns: minmax(9rem, 13rem) minmax(0, 1fr);
+  gap: 0.35rem 1rem;
+  margin: 0;
+}
+
+.rows dt {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.rows dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.note,
+.missing,
+.hint {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+.missing {
+  margin: 0.75rem 0 0;
+}
+
+/* Reads like the "Исправления и дополнения…" line in the Source card (.attribution, below): a
+   quieter, separated note rather than page copy. Only for the folded "В источнике нет: …" note at
+   the end of a field card (PersonCard's Rows) — the plainer "не указано" placeholders in the
+   Дела/Источник cards keep .missing's look; a rule/border there would read as a mistake, and on
+   the Источник card's inline <span> a border-top draws a stray line across the inline box. */
+.missingNote {
+  margin: 0.75rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--rule);
+}
+
+.step,
+.stepAccent,
+.stepUnknown {
+  position: relative;
+  padding: 0.25rem 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.step::before,
+.stepAccent::before,
+.stepUnknown::before {
+  content: "";
+  position: absolute;
+  left: -1.25rem;
+  top: 0.55rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--ink);
+  border: 2px solid var(--surface);
+}
+
+.stepAccent::before {
+  background: var(--accent);
+}
+
+.stepUnknown::before {
+  background: var(--surface);
+  border-color: var(--rule);
+}
+
+.stepValue {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+}
+
+.stepUnknown .stepValue {
+  color: var(--muted);
+}
+
+.stepLabel {
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.source {
+  overflow-wrap: anywhere;
+}
+
+.printUrl {
+  margin: 0.75rem 0 0;
+  overflow-wrap: anywhere;
+  font-size: var(--text-sm);
+}
+
+.attribution {
+  margin: 0.75rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.similar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.similar li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.similar li:last-child {
+  border-bottom: 0;
+}
+
+.similar a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.similar a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.similarMeta {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}
+
+/* Screen only: on paper the page keeps its reading order (narrative, fields, cases, fate, source). */
+@media screen and (max-width: 60em) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  /* Spec §5.3: on narrow screens the fate and source come before the field cards. */
+  .side {
+    position: static;
+    order: -1;
+  }
+
+  .rows {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .rows dd {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Visual order only (column-reverse): the photo shows above the narrative, while the DOM keeps the
+     narrative first for reading order, print and screen readers. */
+  .narrativeBlock {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  /* Capped, not stretched (2026-09-17 review): a fixed `width: 100%` on a narrow viewport upscaled a
+     small scan past its natural size and pushed the narrative below the fold. `max-width` only ever
+     shrinks a wider image down to fit the phone's gutters, never grows a small one up. */
+  .photo {
+    width: auto;
+    max-width: min(100%, 220px);
+  }
+}
+
+@media print {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .side {
+    position: static;
+  }
+
+  .card {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .narrativeBlock {
+    break-inside: avoid;
+  }
+}
+
+.shareSystem {
+  margin-bottom: 0.5rem;
+}
+
+.shareGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.shareLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  color: var(--ink);
+}
+
+.shareLink:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Screen only: an A4 page is narrower than 48em, and the fixed bar and its clearance mean nothing on paper. */
+@media screen and (max-width: 48em) {
+  .actions {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    justify-content: center;
+    padding: 0.5rem calc(var(--gutter)) calc(0.5rem + env(safe-area-inset-bottom, 0px));
+    background: color-mix(in srgb, var(--paper) 94%, transparent);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--rule);
+  }
+
+  /* The bar is fixed to the viewport bottom, so its clearance belongs to the document, not the
+     article: SiteFooter renders after <main> and would otherwise be covered at full scroll. Two
+     buttons ("Печать", "Поделиться") fit one row even at 390px (measured 53px/~3.3rem tall at 390px,
+     2026-09-18, after the "Сохранить как" menu was removed and the bar dropped from two rows to
+     one); the clearance covers that plus margin, down from the old two-row `7rem`. */
+  :global(body):has(.actions) {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom, 0px));
+  }
+}

@@ -1,0 +1,106 @@
+# The production stack. Only caddy is exposed; postgres and meilisearch have no published ports and
+# are reachable on the compose network alone.
+services:
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      web:
+        condition: service_healthy
+
+  web:
+    image: ${MEMORU_IMAGE:-ghcr.io/yanfishel/memoru:latest}
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      MEILI_URL: http://meilisearch:7700
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY}
+      SITE_URL: ${SITE_URL}
+      REVALIDATE_SECRET: ${REVALIDATE_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      meilisearch:
+        condition: service_started
+    # 503 counts as healthy: before the first publish the serving slot is legitimately empty, and a
+    # container marked unhealthy then would keep Caddy from ever starting. The check asks whether the
+    # process answers, not whether there is data.
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS -o /dev/null -w '%{http_code}' http://127.0.0.1:3000/api/health | grep -qE '200|503'"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  postgres:
+    image: postgres:18.6
+    restart: unless-stopped
+    # 2 GB box: the default shared_buffers plus Meilisearch's indexing would not both fit. The
+    # restore is the only heavy moment and it does not overlap with indexing.
+    command: ["postgres", "-c", "shared_buffers=256MB", "-c", "maintenance_work_mem=256MB"]
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 10s
+      retries: 20
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.53.2
+    restart: unless-stopped
+    environment:
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY}
+      MEILI_ENV: production
+      # Without these it helps itself to two thirds of the box and starves Postgres (spec §4).
+      MEILI_MAX_INDEXING_MEMORY: 768Mb
+      MEILI_MAX_INDEXING_THREADS: "1"
+      # This is a memorial site about victims of political repression; it does not phone home.
+      MEILI_NO_ANALYTICS: "true"
+    volumes:
+      - meilidata:/meili_data
+
+  # Not started with the stack: run as `docker compose run --rm etl <command>` (spec §4).
+  etl:
+    image: ${MEMORU_IMAGE:-ghcr.io/yanfishel/memoru:latest}
+    profiles: ["tools"]
+    entrypoint: ["/app/docker/entrypoint-etl.sh"]
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      MEILI_URL: http://meilisearch:7700
+      MEILI_MASTER_KEY: ${MEILI_MASTER_KEY}
+      SITE_URL: ${SITE_URL}
+      REVALIDATE_URL: ${REVALIDATE_URL}
+      REVALIDATE_SECRET: ${REVALIDATE_SECRET}
+      ARTIFACTS_DIR: /artifacts
+      # `env` makes runPgTool exec pg_restore directly in this container, against postgres over the
+      # compose network. The default prefix is `docker compose exec -T postgres`, which would need a
+      # Docker socket inside a container; this needs none.
+      PG_TOOLS: env
+      PG_TOOLS_ARTIFACTS_DIR: /artifacts
+    volumes:
+      # The only /artifacts mount in this stack: PG_TOOLS=env runs pg_restore inside this container
+      # (not postgres's, as the PG_TOOLS default would), so this is where it needs to read dumps from.
+      - ./artifacts:/artifacts
+    depends_on:
+      postgres:
+        condition: service_healthy
+      # publish restores against postgres first and indexes into Meilisearch afterwards; without
+      # this, running against a stopped stack burns the whole restore before failing at indexing.
+      meilisearch:
+        condition: service_started
+
+volumes:
+  pgdata:
+  meilidata:
+  caddy_data:
+  caddy_config:

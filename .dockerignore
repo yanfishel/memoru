@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.artifacts
+.artifacts-server
+.tmp
+test-results
+playwright-report
+docs
+legacy
+data/reports
+*.tsbuildinfo
+.env
+.env.*
+!.env.example

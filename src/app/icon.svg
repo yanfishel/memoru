@@ -1,0 +1,12 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .flame { fill: #9a4a2e; }
+    .dish { fill: #1e1b17; opacity: .5; }
+    @media (prefers-color-scheme: dark) {
+      .flame { fill: #d08a6c; }
+      .dish { fill: #ece6da; opacity: .5; }
+    }
+  </style>
+  <path class="flame" d="M16.6 2.8c.2 2.6-1.1 4-2.5 5.4-1.7 1.7-3.1 3.2-3.1 5.8a5 5 0 0 0 10 0c0-2.3-1-3.7-2-5.1-.6.9-1 1.7-1.1 2.7-1.4-2.6-1.6-5.5-1.3-8.8z"/>
+  <path class="dish" d="M5 20.5c1.9 4.4 6.2 7 11 7s9.1-2.6 11-7z"/>
+</svg>

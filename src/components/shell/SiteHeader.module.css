@@ -1,0 +1,114 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+  transition: box-shadow 0.2s;
+}
+
+.header[data-scrolled="true"] {
+  box-shadow: var(--shadow-card);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  width: 100%;
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0.6rem var(--gutter);
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  color: var(--ink);
+  text-decoration: none;
+  margin-right: auto;
+}
+
+/* The dish (LogoMark's fill="currentColor") and "MEMO" (unset colour, inherited) tint together with
+   the link's own colour; "ru" keeps its own muted colour, in hover as at rest, per the brief. */
+.title:hover {
+  color: var(--accent);
+}
+
+.mark {
+  flex-shrink: 0;
+}
+
+.wordmark {
+  letter-spacing: 0.055em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.wordmarkMuted {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* The drawer's own title container (see HeaderNav.tsx): same lockup as `.title`, but not a link, so
+   it drops `.title`'s `text-decoration`/`margin-right` — those exist only to make the header's own
+   flex row work. */
+.drawerTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  color: var(--ink);
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+  font-size: var(--text-sm);
+}
+
+.link {
+  color: var(--muted);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.link:hover {
+  color: var(--ink);
+}
+
+.link[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.burger {
+  display: none;
+}
+
+.drawerLinks .link {
+  font-size: 1.125rem;
+}
+
+@media (max-width: $mantine-breakpoint-sm) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}

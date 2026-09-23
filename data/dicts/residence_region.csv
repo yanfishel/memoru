@@ -1,0 +1,190 @@
+raw_value,code,method,reviewed
+Башкирская АССР,RU-BA,manual,true
+Брестская обл.,BY,manual,true
+Карельская АССР,RU-KR,manual,true
+Мурманская обл.,RU-MUR,manual,true
+АССР Немцев Поволжья,RU-SAR,manual,true
+АССР НП,RU-SAR,manual,true
+Саратовская обл. (АССР НП),RU-SAR,manual,true
+Кемеровская обл.,RU-KEM,manual,true
+Омска,RU-OMS,manual,true
+Омск,RU-OMS,manual,true
+г. Горького,RU-NIZ,manual,true
+г. Дзержинска,RU-NIZ,manual,true
+ЧАССР,RU-CU,manual,true
+г. Хабаровск,RU-KHA,manual,true
+г. Хабаровск ДВК.,RU-KHA,manual,true
+г. Николаевск-на-Амуре ДВК.,RU-KHA,manual,true
+Хабаровский край,RU-KHA,manual,true
+Хабаровский кр.,RU-KHA,manual,true
+г. Свердловск,RU-SVE,manual,true
+г. Владивостоке,RU-PRI,manual,true
+г. Владивосток,RU-PRI,manual,true
+г. Уссурийске,RU-PRI,manual,true
+Приморская обл. *Уссурийская обл.,RU-PRI,manual,true
+г. Архангельска,RU-ARK,manual,true
+Архангельская о.,RU-ARK,manual,true
+г. Иркутске,RU-IRK,manual,true
+г. Иркутск,RU-IRK,manual,true
+Астрахани,RU-AST,manual,true
+Астраханская обл.,RU-AST,manual,true
+Куйбышеве,RU-SAM,manual,true
+Самары,RU-SAM,manual,true
+Сызрани,RU-SAM,manual,true
+г. Саратова,RU-SAR,manual,true
+г. Саратове,RU-SAR,manual,true
+г. Саратов,RU-SAR,manual,true
+г. Барнаул,RU-ALT,manual,true
+г. Бийск,RU-ALT,manual,true
+Горно-Алтайск,RU-AL,manual,true
+Алтайского края,RU-ALT,manual,true
+г. Челябинск,RU-CHE,manual,true
+г. Златоуст,RU-CHE,manual,true
+г. Магнитогорск,RU-CHE,manual,true
+Аккольский р-н (Сталинский),KZ,manual,true
+Атбасарский р-н,KZ,manual,true
+Атырауская обл,KZ,manual,true
+Южно-Казахстанская обл. (Чимкентская),KZ,manual,true
+Южно-Казахстанская (Чимкентская) обл. Чимкент.,KZ,manual,true
+Жамбылская область (Джамбулская),KZ,manual,true
+Жамбылская обл,KZ,manual,true
+Акмолинская обл. (Целиноградская),KZ,manual,true
+Акмолинская область (Целиноградская),KZ,manual,true
+Западно-Казахстанская обл. (Уральская),KZ,manual,true
+Северо-Казахстанская обл. Петропавловск.,KZ,manual,true
+Алма-Атинская обл. Алма-Ата.,KZ,manual,true
+Карагандинская обл. Караганда.,KZ,manual,true
+Актюбинская обл. Актюбинск.,KZ,manual,true
+Станиславская обл.,UA,manual,true
+Дрогобычская обл.,UA,manual,true
+г. Мариуполь,UA,manual,true
+Бухарская обл.,UZ,manual,true
+Ташкентская обл.,UZ,manual,true
+Андижанская обл.,UZ,manual,true
+Наманганская обл.,UZ,manual,true
+Сурхан-Дарьинская обл.,UZ,manual,true
+Каракалпакстан АССР,UZ,manual,true
+г. Ташкент,UZ,manual,true
+г. Тбилиси,GE,manual,true
+Минск,BY,manual,true
+Могилев,BY,manual,true
+г. Гродно,BY,manual,true
+Гомельская обл.,BY,manual,true
+Молодечненская обл.,BY,manual,true
+г. Ульяновска,RU-ULY,manual,true
+Читинская область,RU-ZAB,manual,true
+г. Чита,RU-ZAB,manual,true
+г. Читы.,RU-ZAB,manual,true
+г. Новосибирск,RU-NVS,manual,true
+г. Новосибирске,RU-NVS,manual,true
+г. Мурманск,RU-MUR,manual,true
+г. Красноярске,RU-KYA,manual,true
+Красноярский край,RU-KYA,manual,true
+г. Новгород,RU-NGR,manual,true
+г.Москва,RU-MOW,manual,true
+Лен. обл.,RU-LEN,manual,true
+Коми Респ.,RU-KO,manual,true
+ЯАССР,RU-SA,manual,true
+ЕАО,RU-YEV,manual,true
+КБАССР,RU-KB,manual,true
+Нальчик,RU-KB,manual,true
+Лашкута,RU-KB,manual,true
+Гунделен,RU-KB,manual,true
+Челмас,RU-KB,manual,true
+Думала,RU-KB,manual,true
+Верх. Жемтала,RU-KB,manual,true
+Шики,RU-KB,manual,true
+Карачаевская АО,RU-KC,manual,true
+г. Баталпашинск,RU-KC,manual,true
+г. Орджоникидзе,RU-SE,manual,true
+Ауховский р-н,RU-DA,manual,true
+г. Пятигорска,RU-STA,manual,true
+г. Кисловодска,RU-STA,manual,true
+г. Ессентуки,RU-STA,manual,true
+г. Ставрополя,RU-STA,manual,true
+г. Ижевск,RU-UD,manual,true
+г. Курган,RU-KGN,manual,true
+г. Оренбург,RU-ORE,manual,true
+г. Орле,RU-ORL,manual,true
+г. Кирове,RU-KIR,manual,true
+г. Липецк,RU-LIP,manual,true
+г. Елец,RU-LIP,manual,true
+г. Калуге,RU-KLU,manual,true
+г. Краснодар,RU-KDA,manual,true
+(Краснодарский кр.),RU-KDA,manual,true
+Крымский р-н,RU-KDA,manual,true
+г. Краснокамск,RU-PER,manual,true
+г. Березники,RU-PER,manual,true
+г. Чусовой,RU-PER,manual,true
+г. Кизел,RU-PER,manual,true
+Россошанский окр.,RU-VOR,manual,true
+г. Воронеж,RU-VOR,manual,true
+г. Ростова-на-Дону,RU-ROS,manual,true
+г. Калинин,RU-TVE,manual,true
+г. Тамбове,RU-TAM,manual,true
+г. Кемерово,RU-KEM,manual,true
+г. Ковров.,RU-VLA,manual,true
+г. Улан-Удэ,RU-BU,manual,true
+г. Петропавловск-Камчатский,RU-KAM,manual,true
+Благовещенске.,RU-AMU,manual,true
+Вологодская о.,RU-VLG,manual,true
+Томский р-н,RU-TOM,manual,true
+Рязанский р-н,RU-RYA,manual,true
+Шиловский р-н,RU-RYA,manual,true
+Касимовский р-н,RU-RYA,manual,true
+Азнакаевский р-н,RU-TA,manual,true
+Тетюшский р-н,RU-TA,manual,true
+Арский р-н,RU-TA,manual,true
+Буинский р-н,RU-TA,manual,true
+Бугульминский р-н,RU-TA,manual,true
+Аксубаевский р-н,RU-TA,manual,true
+Зеленодольский р-н,RU-TA,manual,true
+Алькеевский р-н,RU-TA,manual,true
+Агрызский р-н,RU-TA,manual,true
+Пестречинский р-н,RU-TA,manual,true
+Бавлинский р-н,RU-TA,manual,true
+Нижнекамский р-н,RU-TA,manual,true
+Мензелинский р-н,RU-TA,manual,true
+Верхнеуслонский р-н,RU-TA,manual,true
+Новошешминский р-н,RU-TA,manual,true
+Дрожжановский р-н,RU-TA,manual,true
+Муслюмовский р-н,RU-TA,manual,true
+Кукморский р-н,RU-TA,manual,true
+Сармановский р-н,RU-TA,manual,true
+Черемшанский р-н,RU-TA,manual,true
+Заинский р-н,RU-TA,manual,true
+Камско-Устьинский р-н,RU-TA,manual,true
+Балтасинский р-н,RU-TA,manual,true
+Кайбицкий р-н,RU-TA,manual,true
+Сабинский р-н,RU-TA,manual,true
+Рыбнослободский р-н,RU-TA,manual,true
+Рыбно-Слободский р-н,RU-TA,manual,true
+Апастовский р-н,RU-TA,manual,true
+Атнинский р-н,RU-TA,manual,true
+Елабужский р-н,RU-TA,manual,true
+Менделеевский р-н,RU-TA,manual,true
+Ютазинский р-н,RU-TA,manual,true
+Змеиногорский р-н,RU-ALT,manual,true
+Солтонский р-н,RU-ALT,manual,true
+Чарышский р-н,RU-ALT,manual,true
+Бийский р-н,RU-ALT,manual,true
+Немецкий р-н,RU-ALT,manual,true
+Краюшкинский р-н,RU-ALT,manual,true
+Солонешенский р-н,RU-ALT,manual,true
+Алейский р-н,RU-ALT,manual,true
+Славгородский р-н,RU-ALT,manual,true
+Баевский р-н,RU-ALT,manual,true
+Косихинский р-н,RU-ALT,manual,true
+Волчихинский р-н,RU-ALT,manual,true
+Шипуновский р-н,RU-ALT,manual,true
+С-Бардинский р-н,RU-ALT,manual,true
+Кош-Агачский р-н,RU-AL,manual,true
+Онгудайский р-н,RU-AL,manual,true
+Усть-Коксинский р-н,RU-AL,manual,true
+Шебалинский р-н,RU-AL,manual,true
+Майминский р-н,RU-AL,manual,true
+Усть-Канский р-н,RU-AL,manual,true
+Турачакский р-н,RU-AL,manual,true
+г. Джанкой,UA-43,manual,true
+(Крымская АССР),UA-43,manual,true
+г. Старый Крым,UA-43,manual,true

@@ -1,0 +1,270 @@
+raw_value,code,method,reviewed
+б/п,non_party,manual,true
+беспартийный,non_party,manual,true
+беспартийная,non_party,manual,true
+член ВКП(б),vkpb,manual,true
+член ВЛКСМ,vlksm,manual,true
+бывший член ВКП(б),ex_vkpb,manual,true
+член/канд. в члены ВКП(б),vkpb_candidate,manual,true
+член РСДРП/б/,vkpb,manual,true
+кандидат в члены ВКП(б),vkpb_candidate,manual,true
+искл. из ВКП(б),ex_vkpb,manual,true
+эсер,sr,manual,true
+бывший член ВЛКСМ,ex_vlksm,manual,true
+чл. ВКП(б).,vkpb,manual,true
+б. член ВКП(б),ex_vkpb,manual,true
+ВКП(б),vkpb,manual,true
+искл. из ВКП(б) в связи с арестом,ex_vkpb,manual,true
+анархист,anarchist,manual,true
+член КПСС,vkpb,manual,true
+чл. ВЛКСМ.,vlksm,manual,true
+ранее член ВКП(б),ex_vkpb,manual,true
+социал-демократ,social_democrat,manual,true
+член ВКП(б) с 1919,vkpb,manual,true
+троцкист,trotskyist,manual,true
+бывший кандидат в члены ВКП(б),ex_vkpb,manual,true
+баптист,baptist,manual,true
+социалист-революционер,sr,manual,true
+член ВКП(б) в 1919-1937 гг.,vkpb,manual,true
+ВЛКСМ,vlksm,manual,true
+исключен из ВКП(б),ex_vkpb,manual,true
+член ВКП(б) с 1925,vkpb,manual,true
+член ВКП(б) с 1918,vkpb,manual,true
+член ВКП(б) до ареста,vkpb,manual,true
+член ВКП(б) с 1919 г.,vkpb,manual,true
+исключен из ВКП(б) в 1937 г.,ex_vkpb,manual,true
+член ВКП(б) с 1920,vkpb,manual,true
+искл. из КПСС,ex_vkpb,manual,true
+член ВКП (б),vkpb,manual,true
+член ВКП(б) с 1917,vkpb,manual,true
+член РКП(б),vkpb,manual,true
+член ВКП(б) с 1927,vkpb,manual,true
+член ВКП(б) в 1925-1937,vkpb,manual,true
+член ВКП(б) в 1919-1937,vkpb,manual,true
+член ВКП(б) с 1920 г.,vkpb,manual,true
+член ВКП(б) с 1926,vkpb,manual,true
+член ВКП(б) в 1917-1937 гг.,vkpb,manual,true
+член ВКП(б) в 1932-1937,vkpb,manual,true
+член ВКП(б) с 1925 г.,vkpb,manual,true
+член ВКП(б) в 1931-1937,vkpb,manual,true
+член ВКП(б) с 1931,vkpb,manual,true
+член ВКП(б) с 1928,vkpb,manual,true
+член ВКП(б) с 1932,vkpb,manual,true
+член КПЗБ,kpzb,manual,true
+член ВКП(б) с 1930,vkpb,manual,true
+член ВКП(б) в 1918-1937 гг.,vkpb,manual,true
+член ВКП(б) в 1927-1937,vkpb,manual,true
+член ВКП(б) с 1924,vkpb,manual,true
+член ВКП(б) с 1928 г.,vkpb,manual,true
+РСДРП(м),menshevik,manual,true
+член ВКП(б) в 1928-1937,vkpb,manual,true
+член ВКП(б) в 1925-1937 гг.,vkpb,manual,true
+член ВКП(б) в 1930-1937,vkpb,manual,true
+член ВКП(б) в 1931-1937 гг.,vkpb,manual,true
+член СЕПГ,sed,manual,true
+член ВКП(б) с 1927 г.,vkpb,manual,true
+член ВКП(б) с 1918 г.,vkpb,manual,true
+член ВКП(б) в 1932-1937 гг.,vkpb,manual,true
+член ВКП(б) до 1937,vkpb,manual,true
+член ВКП(б) в 1918-1937,vkpb,manual,true
+член ВКП(б) с 1926 г.,vkpb,manual,true
+чл. ВКП(б) с 1919 г.,vkpb,manual,true
+член ВКП(б) в 1926-1937,vkpb,manual,true
+исключен из ВКП(б) в связи с арестом,ex_vkpb,manual,true
+кандидат в чл. ВКП(б).,vkpb_candidate,manual,true
+член ВКП(б) в 1920-1937 гг.,vkpb,manual,true
+член ВКП(б) с 1929,vkpb,manual,true
+чл. КПСС,vkpb,manual,true
+член ВКП(б) в 1926-1937 гг.,vkpb,manual,true
+ВКП(б) с 1918,vkpb,manual,true
+ВКП(б) с 1919,vkpb,manual,true
+член ВКП(б) в 1929-1937,vkpb,manual,true
+член партии эсеров,sr,manual,true
+анархист-коммунист,anarchist,manual,true
+член ВКП(б) с 1917 г.,vkpb,manual,true
+ВКП(б) с 1931,vkpb,manual,true
+католик,catholic,manual,true
+ВКП(б) с 1925,vkpb,manual,true
+меньшевик,menshevik,manual,true
+член ВКП(б) в 1917-1937,vkpb,manual,true
+член ВКП(б) в 1924-1937 гг.,vkpb,manual,true
+член ВКП(б) в 1928-1937 гг.,vkpb,manual,true
+член ВКП(б) с 1932 г.,vkpb,manual,true
+ВКП(б) с 1930,vkpb,manual,true
+"беспартийный, исключен из ВКП(б)",ex_vkpb,manual,true
+член ВКП(б) в 1920-1937,vkpb,manual,true
+член ВКП(б) в 1927-1937 гг.,vkpb,manual,true
+член ВКП(б) в 1930-1937 гг.,vkpb,manual,true
+ВКП(б) с 1917,vkpb,manual,true
+член ВКП(б) в 1924-1937,vkpb,manual,true
+член КП Германии,kpd,manual,true
+ВКП(б) с 1920,vkpb,manual,true
+член ВКП(б) в 1929-1937 гг.,vkpb,manual,true
+чл. ВКП(б) с 1925 г.,vkpb,manual,true
+член ВКП(б) с 1930 г.,vkpb,manual,true
+член ВКП(б) с 1924 г.,vkpb,manual,true
+ВКП(б) с 1924,vkpb,manual,true
+ВКП(б) с 1927,vkpb,manual,true
+левый социалист-революционер,sr,manual,true
+чл. ВКП(б) с 1918 г.,vkpb,manual,true
+член ВКП(б) с 1929 г.,vkpb,manual,true
+член ВКП(б) с 1931 г.,vkpb,manual,true
+бывший чл. ВКП(б),ex_vkpb,manual,true
+ВЛКСМ с 1931,vlksm,manual,true
+искл. из ВКП(б) в 1937,ex_vkpb,manual,true
+ВКП(б) с 1928,vkpb,manual,true
+член ЛДПГ,ldpg,manual,true
+анархист-синдикалист,anarchist,manual,true
+БП,non_party,manual,true
+член ВКП(б) в 1919-1938 гг.,vkpb,manual,true
+член/канд. в члены ВКП(б) с 1930,vkpb_candidate,manual,true
+член МНРП,mnrp,manual,true
+чл. ВКП(б) с 1932 г.,vkpb,manual,true
+ВКП(б) с 1932,vkpb,manual,true
+исключен из ВКП(б) в 1936 г.,ex_vkpb,manual,true
+кандидат в ВКП(б),vkpb_candidate,manual,true
+член ВКП(б) с 1921,vkpb,manual,true
+беспратийный,non_party,manual,true
+ВКП(б) с 1926,vkpb,manual,true
+исключен из ВКП(б) в 1935 г.,ex_vkpb,manual,true
+анархо-мистик,anarchist,manual,true
+канд. в члены ВКП(б),vkpb_candidate,manual,true
+кандидат в члены КПСС,vkpb_candidate,manual,true
+"старообрядец, старовер",old_believer,manual,true
+чл. ВКП(б) с 1920 г.,vkpb,manual,true
+чл. ВКП(б) с 1926 г.,vkpb,manual,true
+чл. ВКП(б) с 1929 г.,vkpb,manual,true
+член КП(б)У,vkpb,manual,true
+"беспартийный, исключен из ВЛКСМ",ex_vlksm,manual,true
+член ВКП(б) в 1925-1938 гг.,vkpb,manual,true
+ВКП(б) с 1929,vkpb,manual,true
+чл. ВКП(б) с 1930 г.,vkpb,manual,true
+член ВКП(б) до 1937 г.,vkpb,manual,true
+ВЛКСМ с 1930,vlksm,manual,true
+кандидат в партию,vkpb_candidate,manual,true
+чл. ВКП(б) с 1924 г.,vkpb,manual,true
+чл. ВКП(б) с 1927 г.,vkpb,manual,true
+чл. ВКП(б) с 1928 г.,vkpb,manual,true
+член/канд. в члены ВКП(б) с 1919,vkpb_candidate,manual,true
+член ВКП(б) в 1919-1935 гг.,vkpb,manual,true
+член ВКП(б) в 1931-1938 гг.,vkpb,manual,true
+член ВКП(б) до 1935,vkpb,manual,true
+ВКП(б) с 1921,vkpb,manual,true
+член ВКП(б) в 1930-1938 гг.,vkpb,manual,true
+член КП Польши,kpp,manual,true
+кандидат в члены ВКП (б),vkpb_candidate,manual,true
+коммунист,vkpb,manual,true
+чл. ВКП(б) с 1917 г.,vkpb,manual,true
+член ВКП(б) в 1926-1938 гг.,vkpb,manual,true
+член ВКП(б) до 1936,vkpb,manual,true
+член ВКП(б) с 1923,vkpb,manual,true
+кандидат в члены ВКП(б) с 1931,vkpb_candidate,manual,true
+член ВКП(б) (бывший член Бунда),vkpb,manual,true
+"чл. партии ""Мусават""",musavat,manual,true
+беспарийный,non_party,manual,true
+бывший кандидат в члены ВКП (б),ex_vkpb,manual,true
+иеговист,jehovahs_witness,manual,true
+исключен из членов (кандидатов в члены) ВКП(б),ex_vkpb,manual,true
+чл. ВКП(б) с 1931 г.,vkpb,manual,true
+член ВКП(б) в 1919-1936 гг.,vkpb,manual,true
+член/канд. в члены ВКП(б) с 1918,vkpb_candidate,manual,true
+член ВКП(б) в 1925-1935 гг.,vkpb,manual,true
+член/канд. в члены ВКП(б) с 1931,vkpb_candidate,manual,true
+член КП(б) ГССР,vkpb,manual,true
+член ВКП(б) в 1928-1938 гг.,vkpb,manual,true
+быв. член ВЛКСМ,ex_vlksm,manual,true
+бывш. член ВКП(б),ex_vkpb,manual,true
+чл.ВКП(б),vkpb,manual,true
+член ВКП(б) (бывший член партии эсеров),vkpb,manual,true
+член ВКП(б) в 1921-1937,vkpb,manual,true
+член ВКП(б) в 1927-1938 гг.,vkpb,manual,true
+член ВКП(б) в 1932-1938 гг.,vkpb,manual,true
+член ВКП(б) с 1921 г.,vkpb,manual,true
+член/канд. в члены ВКП(б) с 1925,vkpb_candidate,manual,true
+член/канд. в члены ВКП(б) с 1927,vkpb_candidate,manual,true
+кандидат в члены ВКП(б) в 1932-1937,vkpb_candidate,manual,true
+(партийность не указана),unknown,manual,true
+член ВКП(б) в 1917-1938 гг.,vkpb,manual,true
+член ВКП(б) до 1936 г.,vkpb,manual,true
+член/канд. в члены ВКП(б) с 1920,vkpb_candidate,manual,true
+член/канд. в члены ВКП(б) с 1932,vkpb_candidate,manual,true
+член РСДРП,vkpb,manual,true
+чл. КСМ (ВЛКСМ),vlksm,manual,true
+"беспартийный, выбыл из ВЛКСМ",ex_vlksm,manual,true
+"б/п, ранее эсер",non_party,manual,true
+кандидат в члены ВКП(б) с 1932 г.,vkpb_candidate,manual,true
+член ВКП(б) в 1920-1936 гг.,vkpb,manual,true
+член ВКП(б) в 1928-1935 гг.,vkpb,manual,true
+член ВКП(б) в 1929-1938 гг.,vkpb,manual,true
+член/канд. в члены ВКП(б) с 1917,vkpb_candidate,manual,true
+член/канд. в члены ВКП(б) с 1929,vkpb_candidate,manual,true
+член труд.крест.партии,tkp,manual,true
+б/п (бывший эсер),non_party,manual,true
+исключен из ВКП(б) в 1933 г.,ex_vkpb,manual,true
+член ВКП(б) в 1920-1938 гг.,vkpb,manual,true
+член ВКП(б) в 1921-1937 гг.,vkpb,manual,true
+Член ВКП(б) в 1925-1936 гг.,vkpb,manual,true
+член ВКП(б) в 1926-1935 гг.,vkpb,manual,true
+член ВКП(б) до 1933,vkpb,manual,true
+член ВЛКСМ с 1931,vlksm,manual,true
+чл. РСДРП(м),menshevik,manual,true
+беспартиный,non_party,manual,true
+Бывший эсер,sr,manual,true
+ВЛКСМ с 1932,vlksm,manual,true
+исключен из членов ВКП(б),ex_vkpb,manual,true
+РСДРП (м),menshevik,manual,true
+чл. ВЛКСМ с 1938 г.,vlksm,manual,true
+член ВКП(б) (бывший меньшевик),vkpb,manual,true
+член ВКП(б) в 1927-1936 гг.,vkpb,manual,true
+член ВКП(б) в 1930–1938 гг.,vkpb,manual,true
+член ВКП(б) с 1922,vkpb,manual,true
+член ВЛКСМ до ареста,vlksm,manual,true
+член НДПГ,ndpg,manual,true
+искл. из ВЛКСМ,ex_vlksm,manual,true
+член ВКП(б) в 1918-1938 гг.,vkpb,manual,true
+член ВКП(б) в 1930-1936 гг.,vkpb,manual,true
+член ВКП(б) до 1935 г.,vkpb,manual,true
+член ВЛКСМ с 1930,vlksm,manual,true
+член/канд. в члены ВКП(б) с 1924,vkpb_candidate,manual,true
+член/канд. в члены ВКП(б) с 1928,vkpb_candidate,manual,true
+искл. из ВКП(б) в 1935,ex_vkpb,manual,true
+член ВКП(б) в 1918-1936 гг.,vkpb,manual,true
+член ВКП(б) в 1928-1936 гг.,vkpb,manual,true
+член ВКП(б) в 1931-1935 гг.,vkpb,manual,true
+член ВКП(б) до 1932 г.,vkpb,manual,true
+член ВКП(б) с 1939,vkpb,manual,true
+член ВЛКСМ с 1932 г.,vlksm,manual,true
+член ВЛКСМ с 1938,vlksm,manual,true
+член/канд. в члены ВКП(б) с 1926,vkpb_candidate,manual,true
+эсер-максималист,sr,manual,true
+быв. чл. ВЛКСМ,ex_vlksm,manual,true
+исключен из ВКП(б) в 1938 г.,ex_vkpb,manual,true
+кандидат в члены ВКП(б) с 1931 г.,vkpb_candidate,manual,true
+социал-демократ; РСДРП(м),social_democrat,manual,true
+чл. ВКП(б) с 1921 г.,vkpb,manual,true
+член ВКП(б) (бывший эсер),vkpb,manual,true
+член ВКП(б) в 1924-1936 гг.,vkpb,manual,true
+член ВКП(б) в 1929-1936 гг.,vkpb,manual,true
+чл. РСДРП(м) - по версии следствия.,menshevik,manual,true
+кандидат в чл. ВКП(б) с 1931 г.,vkpb_candidate,manual,true
+КПСС,vkpb,manual,true
+член ВКП(б) в 1917-1936 гг.,vkpb,manual,true
+член ВКП(б) в 1931–1938 гг.,vkpb,manual,true
+член ВКП(б) до 1933 г.,vkpb,manual,true
+член ВКП(б) до 1934 г.,vkpb,manual,true
+член ВКП(б) до 1938 г.,vkpb,manual,true
+ВКП(б) с 1905,vkpb,manual,true
+ВКП(б) с 1922,vkpb,manual,true
+ВКП(б) с 1923,vkpb,manual,true
+РКП(б),vkpb,manual,true
+член РСДРП(б),vkpb,manual,true
+кандидат в ВКП(б) с 1931,vkpb_candidate,manual,true
+кандидат в ВКП(б) с 1932,vkpb_candidate,manual,true
+быв. член ВКП(б),ex_vkpb,manual,true
+ВЛКСМ с 1925,vlksm,manual,true
+ВЛКСМ с 1929,vlksm,manual,true
+ВЛКСМ с 1933,vlksm,manual,true
+ВЛКСМ с 1934,vlksm,manual,true
+ВЛКСМ с 1936,vlksm,manual,true
+ВЛКСМ с 1937,vlksm,manual,true
+ВЛКСМ с 1938,vlksm,manual,true

@@ -1,0 +1,73 @@
+.tabs {
+  border-bottom: 1px solid var(--rule);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card,
+.cardWide {
+  min-width: 0;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 1rem;
+}
+
+.cell {
+  min-width: 0;
+}
+
+.cellWide {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.note {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+/* The map caption (MapView.tsx) is the two-<p> form — the boundaries/collapse sentence and the unknown
+   count on their own line, the same way home.module.css's own `.note p` rule stacks Story's — while every
+   other caller keeps applying `.note` straight to one `<p>`, which this selector does not touch. */
+.note p {
+  margin: 0;
+}
+
+.mapCard {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 1rem;
+}
+
+.mapControls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.mapHint {
+  color: var(--muted);
+  font-size: var(--text-xs);
+}
+
+.notice {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 48em) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

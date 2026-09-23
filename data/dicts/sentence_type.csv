@@ -1,0 +1,167 @@
+raw_value,code,method,reviewed
+ВМН (расстрел),vmn,manual,true
+раскулачивание,other,manual,true
+репрессир. по национ. призн,other,manual,true
+дело прекращено,other,manual,true
+мобилизация в трудармию,other,manual,true
+высшая мера наказания,vmn,manual,true
+репрессирована по нац. признаку,other,manual,true
+лишен избирательных прав,other,manual,true
+репрессирован по нац. признаку,other,manual,true
+к лишению свободы на 10 лет,zak,manual,true
+раскулачен,other,manual,true
+выслан как чеченец,vys,manual,true
+лишена избирательных прав,other,manual,true
+выслана как чеченка,vys,manual,true
+депортация,vys,manual,true
+репр. по нац. призн,other,manual,true
+дело прекращено за отсутствием состава преступления,other,manual,true
+трудармия,other,manual,true
+к лишению свободы на 5 лет,zak,manual,true
+дело прекращено за недоказанностью обвинения,other,manual,true
+не осужден,other,manual,true
+"дело прекращено, освобожден",other,manual,true
+раскулачены,other,manual,true
+дело прекращено за недостаточностью улик,other,manual,true
+раскулачена,other,manual,true
+мобилизован в трудармию,other,manual,true
+к лишению свободы на 3 года,zak,manual,true
+оправдан,other,manual,true
+10 л. л. с,zak,manual,true
+освобожден по реабилитирующим обстоятельствам (более 6 мес. под стражей),other,manual,true
+лишен свободы сроком на 10 лет,zak,manual,true
+"дело прекращено, из-под стражи освобожден",other,manual,true
+10 лет л/с,zak,manual,true
+освобожден,other,manual,true
+на 10 лет л/с,zak,manual,true
+освобожден за недоказанностью обвинения,other,manual,true
+уголовное дело прекращено за недоказанностью обвинения,other,manual,true
+предъявлено обвинение,other,manual,true
+10 лет л/св,zak,manual,true
+лишен изб.прав,other,manual,true
+3 г. л. с,zak,manual,true
+выслан как кулак,vys,manual,true
+к лишению свободы на 8 лет,zak,manual,true
+5 л. л. с,zak,manual,true
+раскулачена и выслана,vys,manual,true
+5 лет л/с,zak,manual,true
+"м.с/п: п.ветью, усть-вымский р-н, коми асср",vys,manual,true
+выслан,vys,manual,true
+высшей мере наказания,vmn,manual,true
+"м.с/п: п.пивью, усть-куломский р-н, коми асср",vys,manual,true
+дело прекращено за отсутствием состава преступления. освобожден,other,manual,true
+"м.с/п: п.усть-коин, усть-вымский р-н, коми асср",vys,manual,true
+выслан вместе с семьей в 1931 г,vys,manual,true
+лиш. св,zak,manual,true
+"м.с/п: п.божъюдор, усть-вымский р-н, коми асср",vys,manual,true
+лишена изб.прав,other,manual,true
+сослан на 5 лет,vys,manual,true
+семья раскулачена и выслана в свердловскую обл,vys,manual,true
+дело прекращено по амнистии,other,manual,true
+к 10 годам л/св,zak,manual,true
+дело прекращено за смертью обвиняемого,other,manual,true
+"освобожден в связи с прекращением дела, т.е. реабилитирован",other,manual,true
+выслана,vys,manual,true
+дело прекращено за недоказанностью состава преступления,other,manual,true
+сослан на 3 года,vys,manual,true
+выслан вместе с семьей в 1930 г,vys,manual,true
+лишен свободы сроком на 5 лет,zak,manual,true
+дело прекращено по реабилитирующим обстоятельствам,other,manual,true
+3 года условно,other,manual,true
+конфискация имущества; высшая мера наказания,vmn,manual,true
+8 л. л. с,zak,manual,true
+"дело прекращено, из-под стражи освобожден за недоказанностью обвинения",other,manual,true
+репр. по нац. признаку,other,manual,true
+чсир,other,manual,true
+трудармия: рабочая колонна 1898,other,manual,true
+10 л. л/с,zak,manual,true
+на 5 лет л/с,zak,manual,true
+10 лет.,itl,manual,true
+5 лет.,itl,manual,true
+10 лет с последующим поражением в правах на 5 лет.,itl,manual,true
+8 лет.,itl,manual,true
+8 лет с последующим поражением в правах на 5 лет.,itl,manual,true
+"10 лет, 5 лет поражения в правах",itl,manual,true
+3 года,itl,manual,true
+7 лет.,itl,manual,true
+6 лет.,itl,manual,true
+2 года,itl,manual,true
+5 лет с последующим поражением в правах на 5 лет.,itl,manual,true
+5 лет с последующим поражением в правах на 3 года.,itl,manual,true
+8 лет с последующим поражением в правах на 3 года.,itl,manual,true
+"15 лет каторжных работ, 5 лет поражения в правах",itl,manual,true
+"20 лет каторжных работ, 5 лет поражения в правах",itl,manual,true
+"Каторжные работы, 15 лет; Поражение в правах, 5 лет",itl,manual,true
+10 лет с поражением в правах на 5 лет,itl,manual,true
+на 3 года л/с.,zak,manual,true
+3 года л/с,zak,manual,true
+к лишению свободы сроком на 10 лет.,zak,manual,true
+к 5 годам л/св.,zak,manual,true
+лишен свободы сроком на 3 года.,zak,manual,true
+к лишению свободы на 7 лет,zak,manual,true
+5 л. л/с,zak,manual,true
+5 лет л/св.,zak,manual,true
+3 г. л/с,zak,manual,true
+на 8 лет л/с.,zak,manual,true
+к лишению свободы на 6 лет,zak,manual,true
+8 лет л/св.,zak,manual,true
+8 лет л/с,zak,manual,true
+8 л. л/с,zak,manual,true
+7 л. л. с.,zak,manual,true
+лишен свободы сроком на 8 лет.,zak,manual,true
+8 ГЛС,zak,manual,true
+к лишению свободы сроком на 5 лет.,zak,manual,true
+выслан из Крыма,vys,manual,true
+семья раскулачена и выслана в Таджикистан,vys,manual,true
+"Выслана, м.с/п: п.Ниашор, Сысольский р-н, Коми АССР.",vys,manual,true
+выслан в Северный край на 3 года,vys,manual,true
+"Выслан, м.с/п: п.Ниашор, Сысольский р-н, Коми АССР.",vys,manual,true
+раскулачена и выслана в Красноярский край,vys,manual,true
+раскулачен и выслан в Красноярский край,vys,manual,true
+семья раскулачена и выслана в Мурманскую обл.,vys,manual,true
+"Выслан, м.с/п: п.Зинстан, Усть-Куломский р-н, Коми АССР.",vys,manual,true
+"Выслана, м.с/п: п.Зинстан, Усть-Куломский р-н, Коми АССР.",vys,manual,true
+Выслан вместе с семьей.,vys,manual,true
+высланы в Свердловскую обл.,vys,manual,true
+"Выслана, м.с/п: п.Ичет-Ди, Троицко-Печорский р-н, Коми АССР.",vys,manual,true
+"Выслан, м.с/п: п.Окос, Усть-Куломский р-н, Коми АССР.",vys,manual,true
+"раскулачена - Кемеровская обл., Анжеро-Судженск",vys,manual,true
+"раскулачен - Кемеровская обл., Анжеро-Судженск",vys,manual,true
+раскулачен и выслан за пределы района,vys,manual,true
+"Выслан, м.с/п: п.Выльордым, Железнодорожный р-н, Коми АССР.",vys,manual,true
+семья раскулачена и выслана в Пермскую обл.,vys,manual,true
+выслана в Красноярский край,vys,manual,true
+"Выслана, м.с/п: п.Выльордым, Железнодорожный р-н, Коми АССР.",vys,manual,true
+"Выслана, м.с/п: п.Окос, Усть-Куломский р-н, Коми АССР.",vys,manual,true
+раскулачен и выслан в Свердловскую обл.,vys,manual,true
+раскулачена и выслана за пределы района,vys,manual,true
+раскулачивание [род. на поселении],vys,manual,true
+"дело прекращено за недоказанностью, из-под стражи освобожден.",other,manual,true
+дело прекращено за неподтверждением обвинения.,other,manual,true
+"уголовное дело прекращено, из-под стражи освобожден",other,manual,true
+к лишению свободы условно на 3 года,other,manual,true
+"освобожден, дело прекращено",other,manual,true
+дело прекращено за недоказанностью.,other,manual,true
+из-под стражи освобожден за недоказанностью обвинения,other,manual,true
+"дело прекращено за недоказанностью обвинения, реабилитирован",other,manual,true
+репрессирован.,other,manual,true
+"дело прекращено, из-под стражи освобождена.",other,manual,true
+"дело прекращено, направлен на принудительное лечение в психиатрическую больницу",other,manual,true
+дело прекращено за недостаточностью улик для предания суду.,other,manual,true
+дело прекращено. из-под стражи освобожден,other,manual,true
+Семья раскулачена,other,manual,true
+"дело прекращено на стадии предварительного следствия по реабилитирующим основаниям, из-под стражи освобожден.",other,manual,true
+"дело прекращено за отсутствием состава преступления, из-под стражи освобожден.",other,manual,true
+"Условный срок, 3 года",other,manual,true
+уголовное дело прекращено за отсутствием состава преступления.,other,manual,true
+из-под стражи освобожден,other,manual,true
+взята подписка о невыезде.,other,manual,true
+не осуждена,other,manual,true
+"дело прекращено за отсутствием состава преступления, реабилитирован",other,manual,true
+дело прекращено в связи со смертью,other,manual,true
+"дело прекращено по амнистии, из-под стражи освобожден.",other,manual,true
+"оправдан, из-под стражи освобожден.",other,manual,true
+"дело прекращено, освобождена",other,manual,true
+оправдан по суду,other,manual,true
+лишение избирательных прав,other,manual,true
+3 г. л. с. условно.,other,manual,true
