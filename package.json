@@ -17,7 +17,7 @@
   "dependencies": {
     "@mantine/core": "^9.6.1",
     "@mantine/hooks": "^9.6.1",
-    "@tabler/icons-react": "^3.46.0",
+    "@tabler/icons-react": "^3.47.0",
     "commander": "^15.0.0",
     "csv-parse": "^7.0.2",
     "csv-stringify": "^6.8.3",
@@ -27,8 +27,8 @@
     "next": "16.3.5",
     "pg": "^8.23.0",
     "pg-copy-streams": "^7.0.0",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "saxes": "^6.0.0",
     "server-only": "^0.0.1"
   },
@@ -41,10 +41,10 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
-    "mapshaper": "^0.7.61",
+    "mapshaper": "^0.7.62",
     "postcss-preset-mantine": "^1.18.0",
     "postcss-simple-vars": "^7.0.1",
-    "tsx": "^4.23.13",
+    "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "^5.0.1"
   },
