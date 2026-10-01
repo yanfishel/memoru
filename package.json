@@ -15,20 +15,20 @@
     "geo:build": "tsx scripts/geo/build-geojson.ts"
   },
   "dependencies": {
-    "@mantine/core": "^9.6.1",
-    "@mantine/hooks": "^9.6.1",
-    "@tabler/icons-react": "^3.46.0",
+    "@mantine/core": "^9.6.3",
+    "@mantine/hooks": "^9.6.3",
+    "@tabler/icons-react": "^3.48.0",
     "commander": "^15.0.0",
-    "csv-parse": "^7.0.2",
-    "csv-stringify": "^6.8.3",
-    "drizzle-orm": "^0.45.2",
+    "csv-parse": "^7.0.3",
+    "csv-stringify": "^6.9.0",
+    "drizzle-orm": "^0.45.3",
     "echarts": "^6.1.0",
     "meilisearch": "^0.62.0",
-    "next": "16.3.5",
+    "next": "16.3.6",
     "pg": "^8.23.0",
     "pg-copy-streams": "^7.0.0",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "saxes": "^6.0.0",
     "server-only": "^0.0.1"
   },
@@ -40,13 +40,13 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.3.5",
-    "mapshaper": "^0.7.61",
+    "eslint-config-next": "16.3.6",
+    "mapshaper": "^0.7.69",
     "postcss-preset-mantine": "^1.18.0",
     "postcss-simple-vars": "^7.0.1",
-    "tsx": "^4.23.13",
+    "tsx": "^4.23.15",
     "typescript": "^5",
-    "vitest": "^5.0.1"
+    "vitest": "^5.0.2"
   },
   "packageManager": "pnpm@11.17.0"
 }
